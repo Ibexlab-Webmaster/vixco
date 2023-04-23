@@ -1,5 +1,5 @@
-// 'use client'
 /* eslint-disable react/no-unescaped-entities */
+import Link from 'next/link';
 import Image from 'next/image';
 import Button from '@/components/UI/button';
 import about from '../public/assets/images/about.svg';
@@ -28,6 +28,8 @@ import tokenSale from '../public/assets/images/tokensale.svg';
 import Completed from '../public/assets/images/completed.svg';
 import Ongoing from '../public/assets/images/ongoing.svg';
 import Future from '../public/assets/images/future.svg';
+import NoticeLink from '../public/assets/images/Chevrone.svg';
+import NoticeCardBackground from '../public/assets/images/NotificationBackground.svg';
 
 export default function Home() {
   return (
@@ -578,6 +580,77 @@ export default function Home() {
               </ul>
             </li>
           </ul>
+        </div>
+      </section>
+      <section className='pt-[90px] pb-[120px]'>
+        <div className='max-w-xl mx-auto w-full'>
+          <div className='flex items-center justify-between mb-[86px]'>
+            <div className='w-fit'>
+              <h3 className='text-4xl-bold font-PoppinsBold'>Notice</h3>
+              <hr className='inline-block bg-black p-[2px] w-[30%]' />
+            </div>
+            <Link href={'/notice'} className='flex items-center'>
+              <p className='mr-[10px] text-2lg-bold text-primary-50 font-PoppinsBold'>
+                View all notice
+              </p>
+              <Image src={NoticeLink} alt='notice link' />
+            </Link>
+          </div>
+          <div className='flex items-center justify-between'>
+            <Link
+              href={'/notice'}
+              className='py-5 px-6 rounded-[18px] shadow-shadow-2 max-w-[610px] w-full'
+            >
+              <div className='relative mb-[25px]'>
+                <Image src={NoticeCardBackground} alt='NoticeCardBackground' />
+                <h2 className='text-3lg-semibold font-PoppinsSemibold absolute left-[40px] top-2/4 text-white'>
+                  Listed on Bithumb
+                </h2>
+              </div>
+              <div className='px-5'>
+                <h4 className='text-lg-semibold font-PoppinsSemibold text-primary-50 mb-2'>
+                  Listed on Bithumb
+                </h4>
+                <span className='text-sm-medium font-PoppinsMedium text-tonal-300 mb-[15px] inline-block'>
+                  /2023.1.5/
+                </span>
+                <h5 className='text-sm-regular text-tonal-900 font-PoppinsRegular mb-5'>
+                  Dear Vixco community
+                </h5>
+                <p className='text-sm-regular text-tonal-900 font-PoppinsRegular'>
+                  We are announcing that VIXCO will be listed on the KRW/BTC
+                  market today on Bithumb, the No. 1 virtual asset platform ...
+                </p>
+              </div>
+            </Link>
+            <Link
+              href={'/notice'}
+              className='py-5 px-6 rounded-[18px] shadow-shadow-2 max-w-[610px] w-full'
+            >
+              <div className='relative mb-[25px]'>
+                <Image src={NoticeCardBackground} alt='NoticeCardBackground' />
+                <h2 className='text-3lg-semibold font-PoppinsSemibold absolute left-[40px] top-2/4 text-white'>
+                  VIXCO Migration
+                </h2>
+              </div>
+              <div className='px-5'>
+                <h4 className='text-lg-semibold font-PoppinsSemibold text-primary-50 mb-2'>
+                  VIXCO Migration
+                </h4>
+                <span className='text-sm-medium font-PoppinsMedium text-tonal-300 mb-[15px] inline-block'>
+                  /2022.2.13/
+                </span>
+                <h5 className='text-sm-regular text-tonal-900 font-PoppinsRegular mb-5'>
+                  Hello VIXCO community.
+                </h5>
+                <p className='text-sm-regular text-tonal-900 font-PoppinsRegular'>
+                  VIXCO has carefully moved VIX tokens to enhance transparency
+                  and efficiency. Swaps will take place within the fly bit
+                  exchange ...
+                </p>
+              </div>
+            </Link>
+          </div>
         </div>
       </section>
     </main>

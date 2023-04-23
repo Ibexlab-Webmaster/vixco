@@ -27,7 +27,7 @@ module.exports = {
       'lg-medium': ['18px', '135%'],
 
       'lg-semibold': ['18px', '135%'],
-      'lg-semibold': ['36px', '135%'],
+      '3lg-semibold': ['36px', '135%'],
 
       'base-bold': ['16px', '135%'],
       '2lg-bold': ['24px', '120%'],

@@ -68,7 +68,7 @@ export default function Home() {
           </p>
         </div>
       </section>
-      <section className='pt-32 pb-[57px]'>
+      <section className='pt-32 pb-[57px]' id='about'>
         <div className='max-w-xl w-full mx-auto flex items-center justify-between'>
           <Image src={about} alt='about' />
           <div className='max-w-[581px] w-full'>
@@ -101,7 +101,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className='pt-[57px] pb-[150px] bg-[url("../public/assets/images/advantages-form.svg")] bg-no-repeat bg-cover bg-center'>
+      <section className='pt-[110px] pb-[150px] bg-[url("../public/assets/images/advantages-form.svg")] bg-no-repeat bg-cover bg-center' id='advantages'>
         <div className='max-w-xl w-full mx-auto mb-[52px]'>
           <div className='max-w-[772px] w-full mb-[51px]'>
             <hr className='inline-block linear-bg-3 p-[2px] w-[10%]' />
@@ -139,7 +139,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className='pt-[66px] pb-[60px]'>
+      <section className='pt-[110px] pb-[60px]' id='vixpay'>
         <div className='max-w-xl w-full mx-auto'>
           <hr className='inline-block linear-bg-3 p-[2px] w-[6.2%] mb-5' />
           <div className='w-full flex justify-between'>
@@ -213,7 +213,7 @@ export default function Home() {
               <Button
                 className={
                   'rounded-[46px] border-[2px] border-white py-[13px] hover:scale-[1.05] duration-150 px-[42px] flex items-center ml-[26px] text-lg-medium text-white'
-                }
+                } 
               >
                 <Image src={appStore} alt='google play' className='mr-[10px]' />
                 App Store
@@ -222,7 +222,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className='pt-[50px] pb-[118px] bg-[url("../public/assets/images/VIXCO-solution-background.svg")] bg-no-repeat bg-cover bg-center'>
+      <section className='pt-[110px] pb-[118px] bg-[url("../public/assets/images/VIXCO-solution-background.svg")] bg-no-repeat bg-cover bg-center' id='solution'>
         <div className='max-w-xl mx-auto w-full'>
           <div className='mb-[55px]'>
             <h3 className='text-4xl-bold font-PoppinsBold text-tonal-800'>
@@ -306,7 +306,7 @@ export default function Home() {
           </ul>
         </div>
       </section>
-      <section className='pt-[90px] pb-[47px]'>
+      <section className='pt-[90px] pb-[47px]' id='token'>
         <div className='max-w-xl mx-auto w-full'>
           <div className='flex items-center justify-between mb-[50px]'>
             <h3 className='text-4xl-bold font-PoppinsBold text-tonal-800'>
@@ -480,7 +480,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className='bg-[url("../public/assets/images/RoadMapBackground.svg")] bg-cover bg-no-repeat bg-center py-[90px]'>
+      <section className='bg-[url("../public/assets/images/RoadMapBackground.svg")] bg-cover bg-no-repeat bg-center py-[90px]' id='roadmap'>
         <div className='max-w-xl mx-auto w-full'>
           <div className='w-fit mb-[80px]'>
             <h3 className='text-4xl-bold font-PoppinsBold'>RoadMap</h3>

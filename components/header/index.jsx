@@ -41,7 +41,7 @@ const Header = () => {
           <ul className='flex items-center justify-between'>
             <li>
               <Link
-                href={''}
+                href={'/#about'}
                 className='p-2 font-PoppinsMedium text-base-medium text-tonal-600'
               >
                 About
@@ -49,7 +49,7 @@ const Header = () => {
             </li>
             <li>
               <Link
-                href={''}
+                href={'/#advantages'}
                 className='p-2 font-PoppinsMedium text-base-medium text-tonal-600'
               >
                 Advantages
@@ -57,7 +57,7 @@ const Header = () => {
             </li>
             <li>
               <Link
-                href={''}
+                href={'/#vixpay'}
                 className='p-2 font-PoppinsMedium text-base-medium text-tonal-600'
               >
                 Vixpay
@@ -65,7 +65,7 @@ const Header = () => {
             </li>
             <li>
               <Link
-                href={''}
+                href={'/#solution'}
                 className='p-2 font-PoppinsMedium text-base-medium text-tonal-600'
               >
                 Solution
@@ -73,7 +73,7 @@ const Header = () => {
             </li>
             <li>
               <Link
-                href={''}
+                href={'/#token'}
                 className='p-2 font-PoppinsMedium text-base-medium text-tonal-600'
               >
                 VIXCO Token
@@ -81,7 +81,7 @@ const Header = () => {
             </li>
             <li>
               <Link
-                href={''}
+                href={'/#roadmap'}
                 className='p-2 font-PoppinsMedium text-base-medium text-tonal-600'
               >
                 RoadMap

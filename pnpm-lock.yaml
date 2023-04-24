@@ -1342,8 +1342,8 @@ packages:
       - supports-color
     dev: false
 
-  /@graphql-inspector/core@4.2.0(graphql@15.8.0):
-    resolution: {integrity: sha512-ExGakRzTCQNTY6OuLK2mfCJ3rE9CsoB76GjqI24xNRdig0spJ15rBPpXSRT+dbpjdJpObX7elYq6uGB9zJcv2A==}
+  /@graphql-inspector/core@4.2.1(graphql@15.8.0):
+    resolution: {integrity: sha512-2aXRvILVy0qsGK9dJKeR/lqg5VW9oAr0ANDMcyzA1fuKZRXKR58bXMoLR6+NCV8dMg/Xjfi2imBbmx1ZhYrs/g==}
     peerDependencies:
       graphql: ^14.0.0 || ^15.0.0 || ^16.0.0
     dependencies:
@@ -1396,7 +1396,7 @@ packages:
     dependencies:
       '@graphql-tools/utils': 9.2.1(graphql@15.8.0)
       graphql: 15.8.0
-      tslib: 2.5.0
+      tslib: 2.4.1
     dev: false
 
   /@graphql-tools/optimize@1.4.0(graphql@15.8.0):
@@ -1405,7 +1405,7 @@ packages:
       graphql: ^14.0.0 || ^15.0.0 || ^16.0.0 || ^17.0.0
     dependencies:
       graphql: 15.8.0
-      tslib: 2.5.0
+      tslib: 2.4.1
     dev: false
 
   /@graphql-tools/relay-operation-optimizer@6.5.18(encoding@0.1.13)(graphql@15.8.0):
@@ -1430,7 +1430,7 @@ packages:
       '@graphql-tools/merge': 8.4.1(graphql@15.8.0)
       '@graphql-tools/utils': 9.2.1(graphql@15.8.0)
       graphql: 15.8.0
-      tslib: 2.5.0
+      tslib: 2.4.1
       value-or-promise: 1.0.12
     dev: false
 
@@ -1440,7 +1440,7 @@ packages:
       graphql: ^14.0.0 || ^15.0.0 || ^16.0.0 || ^17.0.0
     dependencies:
       graphql: 15.8.0
-      tslib: 2.5.0
+      tslib: 2.4.1
     dev: false
 
   /@graphql-tools/utils@9.2.1(graphql@15.8.0):
@@ -1695,7 +1695,7 @@ packages:
     dependencies:
       '@monaco-editor/loader': 1.3.3(monaco-editor@0.31.0)
       monaco-editor: 0.31.0
-      prop-types: 15.8.1
+      prop-types: 15.7.2
       react: 17.0.2
       react-dom: 17.0.2(react@17.0.2)
     dev: false
@@ -1709,7 +1709,7 @@ packages:
     dependencies:
       '@monaco-editor/loader': 1.3.3(monaco-editor@0.31.0)
       monaco-editor: 0.31.0
-      prop-types: 15.8.1
+      prop-types: 15.7.2
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
     dev: false
@@ -2827,7 +2827,7 @@ packages:
       '@graphql-codegen/typescript-generic-sdk': 2.5.1(graphql-tag@2.12.6)(graphql@15.8.0)
       '@graphql-codegen/typescript-operations': 2.5.13(graphql@15.8.0)
       '@graphql-codegen/visitor-plugin-common': 2.13.8(graphql@15.8.0)
-      '@graphql-inspector/core': 4.2.0(graphql@15.8.0)
+      '@graphql-inspector/core': 4.2.1(graphql@15.8.0)
       '@graphql-tools/graphql-file-loader': 7.5.17(graphql@15.8.0)
       '@graphql-tools/load': 7.8.14(graphql@15.8.0)
       '@rollup/pluginutils': 5.0.2
@@ -11904,7 +11904,7 @@ packages:
       lodash: 4.17.21
       lodash-es: 4.17.21
       material-colors: 1.2.6
-      prop-types: 15.8.1
+      prop-types: 15.7.2
       react: 17.0.2
       reactcss: 1.2.3(react@17.0.2)
       tinycolor2: 1.6.0
@@ -11919,7 +11919,7 @@ packages:
       lodash: 4.17.21
       lodash-es: 4.17.21
       material-colors: 1.2.6
-      prop-types: 15.8.1
+      prop-types: 15.7.2
       react: 18.2.0
       reactcss: 1.2.3(react@18.2.0)
       tinycolor2: 1.6.0
@@ -11935,7 +11935,7 @@ packages:
       create-react-class: 15.7.0
       moment: 2.29.4
       object-assign: 3.0.0
-      prop-types: 15.8.1
+      prop-types: 15.7.2
       react: 17.0.2
       react-dom: 17.0.2(react@17.0.2)
       react-onclickoutside: 6.13.0(react-dom@17.0.2)(react@17.0.2)
@@ -11951,7 +11951,7 @@ packages:
       create-react-class: 15.7.0
       moment: 2.29.4
       object-assign: 3.0.0
-      prop-types: 15.8.1
+      prop-types: 15.7.2
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
       react-onclickoutside: 6.13.0(react-dom@18.2.0)(react@18.2.0)
@@ -12709,8 +12709,8 @@ packages:
       yargs: 17.7.1
     dev: false
 
-  /rollup@3.20.7:
-    resolution: {integrity: sha512-P7E2zezKSLhWnTz46XxjSmInrbOCiul1yf+kJccMxT56vxjHwCbDfoLbiqFgu+WQoo9ij2PkraYaBstgB2prBA==}
+  /rollup@3.21.0:
+    resolution: {integrity: sha512-ANPhVcyeHvYdQMUyCbczy33nbLzI7RzrBje4uvNiTDJGIMtlKoOStmympwr9OtS1LZxiDmE2wvxHyVhoLtf1KQ==}
     engines: {node: '>=14.18.0', npm: '>=8.0.0'}
     hasBin: true
     optionalDependencies:
@@ -13468,7 +13468,7 @@ packages:
       react-dom: '>=16.14.0'
       react-is: ^16.13.1 || <18.0.0
     dependencies:
-      '@graphql-inspector/core': 4.2.0(graphql@15.8.0)
+      '@graphql-inspector/core': 4.2.1(graphql@15.8.0)
       '@graphql-tools/relay-operation-optimizer': 6.5.18(encoding@0.1.13)(graphql@15.8.0)
       '@headlessui/react': 1.7.14(react-dom@17.0.2)(react@17.0.2)
       '@heroicons/react': 1.0.6(react@17.0.2)
@@ -13516,7 +13516,7 @@ packages:
       react-dom: '>=16.14.0'
       react-is: ^16.13.1 || <18.0.0
     dependencies:
-      '@graphql-inspector/core': 4.2.0(graphql@15.8.0)
+      '@graphql-inspector/core': 4.2.1(graphql@15.8.0)
       '@graphql-tools/relay-operation-optimizer': 6.5.18(encoding@0.1.13)(graphql@15.8.0)
       '@headlessui/react': 1.7.14(react-dom@18.2.0)(react@18.2.0)
       '@heroicons/react': 1.0.6(react@18.2.0)
@@ -14307,7 +14307,7 @@ packages:
       esbuild: 0.16.17
       postcss: 8.4.23
       resolve: 1.22.2
-      rollup: 3.20.7
+      rollup: 3.21.0
     optionalDependencies:
       fsevents: 2.3.2
     dev: false

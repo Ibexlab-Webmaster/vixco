@@ -33,7 +33,7 @@ import NoticeCardBackground from '../public/assets/images/NotificationBackground
 
 export default function Home() {
   return (
-    <main className='h-full'>
+    <main className='h-full grow'>
       <section className='pb-[160px] shadow-hero-shadow pt-[116px] bg-[url("../public/assets/images/hero-bg.svg")] bg-cover bg-no-repeat relative'>
         <div className='bg-[url("../public/assets/images/vixco-hero.svg")] bg-no-repeat bg-[top_30px_right_100px] bg-[length:676px_449px]'>
           <div className='max-w-xl w-full mx-auto pt-[63px] pb-12'>

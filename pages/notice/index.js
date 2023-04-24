@@ -5,15 +5,14 @@ import Breadcrumb from '@/components/breadCrumb';
 import Input from '@/components/input';
 import searchIcon from '../../public/assets/images/search.svg';
 import NoticeCardBackground from '../../public/assets/images/NotificationBackground.svg';
-import { notice } from '@/constants/notice';
+import { noticeDatas } from '@/constants/notice';
 
 export default function Notice() {
   const [searchValue, setSearchValue] = useState('');
-  //   console.log(searchValue)
 
   return (
     <main className='h-full grow'>
-      <section className='pt-[116px] bg-[url("../public/assets/images/NoticepageBackground.svg")] bg-cover bg-no-repeat relative'>
+      <section className='pt-[116px] bg-[url("../public/assets/images/NoticepageBackground.svg")] bg-cover bg-no-repeat'>
         <div className='max-w-xl w-full mx-auto pt-[108px] pb-[126px]'>
           <h2 className='text-7xl-bold font-PoppinsBold linear-txt-2'>
             Notice
@@ -24,7 +23,7 @@ export default function Notice() {
         <div className='max-w-xl w-full mx-auto'>
           <div className='flex items-center justify-between mb-[90px]'>
             <Breadcrumb
-              search={searchValue.length > 0 ? 'Search Results' : ''}
+              search={searchValue?.length > 0 ? 'Search Results' : ''}
             />
             <div className='flex items-center border-b-2 max-w-[296px] border-tonal-900 w-full py-[7px]'>
               <Image src={searchIcon} alt='search' className='mr-[10px]' />
@@ -41,8 +40,12 @@ export default function Notice() {
             </div>
           </div>
           <div className='w-full flex items-center justify-between'>
-            {notice.length > 0 &&
-              notice.map((n) => {
+            {noticeDatas
+              ?.filter((n) =>
+                n.title.toLowerCase().includes(searchValue.toLowerCase()) ||
+                n.description.toLowerCase().includes(searchValue.toLowerCase())
+              )
+              .map((n) => {
                 return (
                   <Link
                     href={'/notice/' + n.id}
@@ -50,10 +53,7 @@ export default function Notice() {
                     className='py-5 px-6 rounded-[18px] shadow-shadow-2 max-w-[610px] w-full'
                   >
                     <div className='relative mb-[25px]'>
-                      <Image
-                        src={NoticeCardBackground}
-                        alt='NoticeCardBackground'
-                      />
+                      <Image src={NoticeCardBackground} alt='NoticeCardBackground' />
                       <h2 className='text-3lg-semibold font-PoppinsSemibold absolute left-[40px] top-2/4 text-white'>
                         {n.title}
                       </h2>
@@ -63,7 +63,7 @@ export default function Notice() {
                         {n.title}
                       </h4>
                       <span className='text-sm-medium font-PoppinsMedium text-tonal-300 mb-[15px] inline-block'>
-                        /`${n.date}`/
+                        /{n.date}/
                       </span>
                       <p className='text-sm-regular text-tonal-900 font-PoppinsRegular'>
                         {n.description}
@@ -73,6 +73,7 @@ export default function Notice() {
                 );
               })}
           </div>
+
         </div>
       </section>
     </main>

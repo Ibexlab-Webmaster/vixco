@@ -1,30 +1,31 @@
+import Breadcrumb from "@/components/breadCrumb";
+import { noticeDatas } from "@/constants/notice";
+
 export default function NoticePerPage({ notice }) {
   return (
-    <div>
-      <h1>{notice.title}</h1>
-      <p>Date: {notice.date}</p>
-      <p>{notice.description}</p>
-    </div>
+    <main className="h-full grow">
+      <section className="pt-[150px] pb-[15px]">
+        <div className='max-w-xl pl-[44px] w-full mx-auto py-[100px] bg-[url("/assets/images/NotificationPageBackground.svg")] bg-cover bg-no-repeat'>
+          <h2 className="text-6xl-bold text-white font-PoppinsBold">VIXCO Migration</h2>
+        </div>
+      </section>
+      <section className="py-[15px]">
+        <div className="max-w-xl w-full mx-auto">
+          <div className="mb-[60px]">
+            <Breadcrumb title={notice.title} />
+          </div>
+
+          <h2 className="text-3lg-semibold font-PoppinsSemibold text-tonal-800 mb-[10px]">{notice.title}</h2>
+          <p className="text-lg-medium font-PoppinsMedium text-tonal-400 mb-[30px]">/{notice.date}/</p>
+          <p className="text-tonal-800 text-md-regular font-PoppinsRegular max-w-[600px] w-full">{notice.description}</p>
+        </div>
+      </section>
+    </main>
   );
 }
 
 export async function getStaticPaths() {
-  const data = [
-    {
-      id: 1,
-      title: 'Listed on Bithumb',
-      date: '2023.1.5',
-      description:
-        'Hello VIXCO community.VIXCO has carefully moved VIX tokens to enhance transparency and efficiency. Swaps will take place within the fly bit exchange.Swap progress time February 16th 17:00~18:00 Deposit and withdrawal stop time February 16th 12:00~19:00 Migration is a process to includes lock-up and incineration functions.We will notify you when the deposit and withdrawal resume.We are very sorry for the inconvenience in using it.Please continue to show a lot of love and support/encourage VIXCO.Migration contract address: 0xc021E11ef66710fE2c9E0FbbbD8b4F7C3016738b Existing contract address: 0x49615a649b698bf55df9e1d2147e0602ac842b0b Migration ratio: It remains the same at 1:1 Deposit address: 0x6756636a92ce0c82c5c6fd4068d695f0700be7d0',
-    },
-    {
-      id: 2,
-      title: 'VIXCO Migration',
-      date: '2022.2.13',
-      description:
-        'Hello VIXCO community.VIXCO has carefully moved VIX tokens to enhance transparency and efficiency. Swaps will take place within the fly bit exchange ...',
-    },
-  ];
+  const data = noticeDatas
 
   const paths = data.map((notice) => ({
     params: { id: notice.id.toString() },
@@ -34,22 +35,7 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params }) {
-  const data = [
-    {
-      id: 1,
-      title: 'Listed on Bithumb',
-      date: '2023.1.5',
-      description:
-        'Hello VIXCO community.VIXCO has carefully moved VIX tokens to enhance transparency and efficiency. Swaps will take place within the fly bit exchange.Swap progress time February 16th 17:00~18:00 Deposit and withdrawal stop time February 16th 12:00~19:00 Migration is a process to includes lock-up and incineration functions.We will notify you when the deposit and withdrawal resume.We are very sorry for the inconvenience in using it.Please continue to show a lot of love and support/encourage VIXCO.Migration contract address: 0xc021E11ef66710fE2c9E0FbbbD8b4F7C3016738b Existing contract address: 0x49615a649b698bf55df9e1d2147e0602ac842b0b Migration ratio: It remains the same at 1:1 Deposit address: 0x6756636a92ce0c82c5c6fd4068d695f0700be7d0',
-    },
-    {
-      id: 2,
-      title: 'VIXCO Migration',
-      date: '2022.2.13',
-      description:
-        'Hello VIXCO community.VIXCO has carefully moved VIX tokens to enhance transparency and efficiency. Swaps will take place within the fly bit exchange ...',
-    },
-  ];
+  const data = noticeDatas
 
   const notice = data.find((n) => n.id.toString() === params.id);
 

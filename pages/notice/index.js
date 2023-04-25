@@ -64,7 +64,7 @@ export default function Notice() {
                       <h4 className='text-lg-semibold font-PoppinsSemibold text-primary-50 mb-2 max-[450px]:text-base-regular'>
                         {n.title}
                       </h4>
-                      <span className='text-sm-medium font-PoppinsMedium text-tonal-300 mb-[15px] inline-block max-[450px]:text-sm-regular'>
+                      <span className='text-sm-medium font-PoppinsMedium text-tonal-300 mb-[15px] inline-block max-[450px]:text-xxs-regular'>
                         /{n.date}/
                       </span>
                       <p className='text-sm-regular text-tonal-900 font-PoppinsRegular'>

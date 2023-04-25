@@ -4,8 +4,7 @@ import Image from 'next/image';
 import logo from '../../public/assets/images/logo.svg';
 import LanguageSwitcher from '../languageSwitcher';
 import menu from '../../public/assets/images/menu.svg'
-import close from '../../public/assets/images/menu-close.svg'
-import { useRouter } from 'next/router';
+import MenuModal from '../menu';
 
 const options = [
   { value: 'en', label: 'ENG' },
@@ -15,7 +14,6 @@ const options = [
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrollPosition, setScrollPosition] = useState(0);
-  const router = useRouter()
 
   useEffect(() => {
     const handleScroll = () => {
@@ -28,7 +26,7 @@ const Header = () => {
     };
   }, []);
 
-  console.log(router.pathname)
+
   const isHeaderWhite = scrollPosition > 80;
   const handleOptionChange = (option) => {
     console.log('Selected option:', option);
@@ -115,10 +113,10 @@ const Header = () => {
           <div className='relative max-[450px]:hidden'>
             <LanguageSwitcher options={options} onChange={handleOptionChange} />
           </div>
-          <Image src={menu} alt='menu' onClick={() => setIsOpen(true)} />
+          <Image src={menu} alt='menu' onClick={() => setIsOpen(true)} className='max-[450px]:block hidden' />
         </div>
       </header>
-      
+      <MenuModal isOpen={isOpen} onClose={() => setIsOpen(false)} />
     </>
   );
 };

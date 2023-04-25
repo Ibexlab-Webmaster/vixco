@@ -27,6 +27,7 @@ module.exports = {
       'base-medium': ['16px', '135%'],
       'lg-medium': ['18px', '135%'],
 
+      'sm-semibold': ['14px', '135%'],
       'lg-semibold': ['18px', '135%'],
       '3lg-semibold': ['36px', '135%'],
 

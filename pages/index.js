@@ -175,24 +175,27 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className='pt-[60px] pb-[150px]'>
+      <section className='pt-[60px] pb-[150px] max-[450px]:pb-[70px]'>
         <div className='max-w-xl mx-auto max-[450px]:mx-0 max-[450px]:py-[75px] max-[450px]:h-full max-[450px]:bg-[url("../public/assets/images/vixpay-app-mobile.svg")] w-full bg-[url("../public/assets/images/vixpay-app.svg")] bg-cover max-[450px]:bg-center max-[450px]:rounded-20 bg-no-repeat h-[575px] pt-[70px] flex items-start justify-between px-[100px] max-[450px]:px-6 max-[450px]:flex max-[450px]:flex-col'>
-          <div>
+          <div className='max-[450px]:mb-10'>
+            <h5 className='font-PoppinsRegular text-white mb-1 hidden max-[450px]:block text-sm-regular'>
+              FOR YOUR BUSINESS
+            </h5>
             <h3 className='text-4xl-bold font-PoppinsBold text-white'>
               Vixpay app
             </h3>
-            <hr className='inline-block bg-white p-[1px] w-[13%] mb-[70px]' />
+            <hr className='inline-block bg-white p-[1px] w-[13%] mb-[70px] max-[450px]:mb-[30px]' />
             <Image
               src={vixpayApp}
               alt='vixpayApp'
               className='absolute ml-[50px] max-[450px]:static max-[450px]:ml-0'
             />
           </div>
-          <div className='max-w-[522px] w-full'>
-            <h5 className='text-lg-medium font-PoppinsMedium text-white text-right mb-[84px]'>
+          <div className='max-w-[522px] w-full max-[450px]:mb-[30px]'>
+            <h5 className='text-lg-medium font-PoppinsMedium text-white text-right mb-[84px] max-[450px]:hidden'>
               FOR YOUR BUSINESS
             </h5>
-            <p className='text-md-regular text-white mb-12 font-PoppinsRegular'>
+            <p className='text-md-regular text-white mb-12 font-PoppinsRegular max-[450px]:text-sm-regular'>
               VIXPAY is a blockchain platform that connects merchants and
               consumers. It can be easily used at merchants nationwide without
               complicated sign-up or charging procedures, while supporting the
@@ -200,10 +203,10 @@ export default function Home() {
               on the convenience of consumers and merchants, you can use it
               simply by presenting a QR code and entering a password.
             </p>
-            <div className='flex items-center'>
+            <div className='flex items-center max-[450px]:flex-col max-[450px]:w-full max-[450px]:gap-[26px]'>
               <Button
                 className={
-                  'rounded-[46px] border-[2px] border-white py-[13px] hover:scale-[1.05] duration-150 px-[42px] flex items-center text-lg-medium text-white'
+                  'rounded-[46px] max-[450px]:w-full max-[450px]:justify-center max-[450px]:mx-0 border-[2px] border-white py-[13px] hover:scale-[1.05] duration-150 px-[42px] flex items-center text-lg-medium text-white'
                 }
               >
                 <Image
@@ -215,7 +218,7 @@ export default function Home() {
               </Button>
               <Button
                 className={
-                  'rounded-[46px] border-[2px] border-white py-[13px] hover:scale-[1.05] duration-150 px-[42px] flex items-center ml-[26px] text-lg-medium text-white'
+                  'rounded-[46px] max-[450px]:w-full max-[450px]:justify-center max-[450px]:mx-0 border-[2px] border-white py-[13px] hover:scale-[1.05] duration-150 px-[42px] flex items-center ml-[26px] text-lg-medium text-white'
                 }
               >
                 <Image src={appStore} alt='google play' className='mr-[10px]' />
@@ -225,28 +228,28 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className='pt-[110px] pb-[118px] bg-[url("../public/assets/images/VIXCO-solution-background.svg")] bg-no-repeat bg-cover bg-center' id='solution'>
+      <section className='pt-[110px] pb-[118px] max-[450px]:pb-[65px] bg-[url("../public/assets/images/VIXCO-solution-background.svg")] bg-no-repeat bg-cover bg-center' id='solution'>
         <div className='max-w-xl mx-auto w-full max-[450px]:px-6'>
-          <div className='mb-[55px]'>
-            <h3 className='text-4xl-bold font-PoppinsBold text-tonal-800'>
+          <div className='mb-[55px] max-[450px]:mb-[50px]'>
+            <h3 className='text-4xl-bold font-PoppinsBold text-tonal-800 max-[450px]:text-3xl-bold'>
               <span className='linear-txt-1'>VIXCO</span> Solution
             </h3>
-            <hr className='inline-block bg-black p-[2px] w-[3.2%] mb-5' />
+            <hr className='inline-block bg-black p-[2px] w-[3.2%] mb-5 max-[450px]:w-[20%]' />
           </div>
           <ul className='flex flex-col gap-[70px]'>
-            <li className='flex items-center max-[450px]:flex-col'>
-              <div className='flex items-start max-w-[522px] w-full mx-auto'>
-                <div className='relative flex items-center justify-center'>
+            <li className='flex items-center max-[450px]:flex-col max-[450px]:gap-[30px]'>
+              <div className='flex items-start max-w-[522px] w-full mx-auto max-[450px]:flex-col'>
+                <div className='relative flex items-center justify-center max-[450px]:mb-[10px]'>
                   <Image src={number} alt='numbers' width={30} height={30} />
                   <p className='text-base-regular absolute font-PoppinsMedium text-white'>
                     1
                   </p>
                 </div>
-                <div className='ml-[15px] max-w-[478px] w-full'>
+                <div className='ml-[15px] max-w-[478px] w-full max-[450px]:ml-0'>
                   <p className='text-2lg-bold font-PoppinsBold text-tonal-800 max-w-[250px] w-full mb-[31px]'>
                     VIXCO Blockchain POS Terminal
                   </p>
-                  <p className='text-tonal-500 text-md-regular font-PoppinsRegular'>
+                  <p className='text-tonal-500 text-md-regular font-PoppinsRegular max-[450px]:text-sm-regular'>
                     Blockchain POS and kiosk terminals connected to VIXCO
                     Working Node are the core infrastructure of the VIXCO
                     platform. These terminals come equipped with wallets,
@@ -257,19 +260,19 @@ export default function Home() {
               </div>
               <Image src={vixcoPos} alt='vixco terminal' />
             </li>
-            <li className='flex flex-row-reverse items-center max-[450px]:flex-col'>
-              <div className='flex items-start max-w-[549px] w-full mx-auto'>
-                <div className='relative flex items-center justify-center'>
+            <li className='flex flex-row-reverse items-center max-[450px]:flex-col max-[450px]:gap-[30px]'>
+              <div className='flex items-start max-w-[549px] w-full mx-auto max-[450px]:flex-col'>
+                <div className='relative flex items-center justify-center max-[450px]:mb-[10px]'>
                   <Image src={number} alt='numbers' width={30} height={30} />
                   <p className='text-base-regular absolute font-PoppinsMedium text-white'>
                     2
                   </p>
                 </div>
-                <div className='ml-[15px] max-w-[505px] w-full'>
+                <div className='ml-[15px] max-w-[505px] w-full max-[450px]:ml-0'>
                   <p className='text-2lg-bold font-PoppinsBold text-tonal-800 max-w-[250px] w-full mb-[31px]'>
                     Digital Marketing System
                   </p>
-                  <p className='text-tonal-500 text-md-regular font-PoppinsRegular'>
+                  <p className='text-tonal-500 text-md-regular font-PoppinsRegular max-[450px]:text-sm-regular'>
                     The digital marketing system using blockchain POS and kiosk
                     terminals, and cloud-based POS systems is a powerful tool
                     for providing efficient and differentiated marketing
@@ -282,19 +285,19 @@ export default function Home() {
               </div>
               <Image src={dgSystem} alt='vixco terminal' />
             </li>
-            <li className='flex items-center max-[450px]:flex-col'>
-              <div className='flex items-start max-w-[522px] w-full mx-auto'>
-                <div className='relative flex items-center justify-center'>
+            <li className='flex items-center max-[450px]:flex-col max-[450px]:gap-[30px]'>
+              <div className='flex items-start max-w-[522px] w-full mx-auto max-[450px]:flex-col'>
+                <div className='relative flex items-center justify-center max-[450px]:mb-[10px]'>
                   <Image src={number} alt='numbers' width={30} height={30} />
                   <p className='text-base-regular absolute font-PoppinsMedium text-white'>
                     3
                   </p>
                 </div>
-                <div className='ml-[15px] max-w-[478px] w-full'>
+                <div className='ml-[15px] max-w-[478px] w-full max-[450px]:ml-0'>
                   <p className='text-2lg-bold font-PoppinsBold text-tonal-800 max-w-[250px] w-full mb-[31px]'>
                     VIXPAY Payment System
                   </p>
-                  <p className='text-tonal-500 text-md-regular font-PoppinsRegular'>
+                  <p className='text-tonal-500 text-md-regular font-PoppinsRegular max-[450px]:text-sm-regular'>
                     VIXPAY is a blockchain-based payment system that provides a
                     convenient solution for customers to accumulate and pay with
                     VIXCO Point tokens using a mobile app. Combined with
@@ -309,20 +312,23 @@ export default function Home() {
           </ul>
         </div>
       </section>
-      <section className='pt-[90px] pb-[47px]' id='token'>
+      <section className='pt-[90px] pb-[47px] max-[450px]:px-6' id='token'>
         <div className='max-w-xl mx-auto w-full'>
           <div className='flex items-center justify-between mb-[50px]'>
-            <h3 className='text-4xl-bold font-PoppinsBold text-tonal-800'>
-              <span className='linear-txt-1'>VIXCO</span> Token
-            </h3>
-            <div className='flex items-center'>
+            <div>
+              <h3 className='text-4xl-bold font-PoppinsBold text-tonal-800 max-[450px]:text-3xl-bold'>
+                <span className='linear-txt-1'>VIXCO</span> Token
+              </h3>
+              <hr className='inline-block bg-black p-[2px] w-[20%] mb-5 max-[450px]:w-[20%]' />
+            </div>
+            <div className='flex items-center max-[450px]:hidden' >
               <Image src={erp} alt='erp' />
               <p className='text-2lg-bold font-PoppinsBold text-primary-50 ml-[10px]'>
                 ERC - 20
               </p>
             </div>
           </div>
-          <p className='text-md-regular font-PoppinsRegular text-tonal-800 mb-5'>
+          <p className='text-md-regular font-PoppinsRegular text-tonal-800 mb-5 max-[450px]:text-sm-regular max-[450px]:mb-[25px]'>
             VIXCO is an ERC20 token issued on the Ethereum blockchain network,
             and it is a utility token that can be exchanged with Point tokens
             used on the VIXCO platform. The VIXCO platform provides payment,
@@ -332,12 +338,18 @@ export default function Home() {
             staked, which allows partners to recruit VIXCO merchants and
             customers.{' '}
           </p>
-          <p className='text-md-regular font-PoppinsRegular text-tonal-800 mb-[41px]'>
+          <p className='text-md-regular font-PoppinsRegular text-tonal-800 mb-[41px] max-[450px]:text-sm-regular max-[450px]:hidden'>
             The commission revenue generated on the VIXCO platform is
             distributed according to the proportion of VIXCO staked in the
             Working Node, which increases the demand and value of the VIXCO
             token.
           </p>
+          <div className='items-center hidden max-[450px]:flex max-[450px]:mb-6'>
+            <Image src={erp} alt='erp' />
+            <p className='text-2lg-bold font-PoppinsBold text-primary-50 ml-[10px] max-[450px]:text-sm-semibold'>
+              ERC - 20
+            </p>
+          </div>
           <Image
             src={bloackChainVixco}
             className='mx-auto'

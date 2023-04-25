@@ -40,7 +40,7 @@ export default function Notice() {
               />
             </div>
           </div>
-          <div className='w-full flex items-center justify-between max-[450px]:flex-col'>
+          <div className='w-full flex items-center justify-between max-[450px]:flex-col max-[450px]:gap-5'>
             {noticeDatas
               ?.filter((n) =>
                 n.title.toLowerCase().includes(searchValue.toLowerCase()) ||

@@ -31,6 +31,7 @@ import Ongoing from '../public/assets/images/ongoing.svg';
 import Future from '../public/assets/images/future.svg';
 import NoticeLink from '../public/assets/images/Chevrone.svg';
 import NoticeCardBackground from '../public/assets/images/NotificationBackground.svg';
+import NotificationBackgroundCardMobile from '../public/assets/images/NotificationPageBackground-mobile.svg'
 
 export default function Home() {
   return (
@@ -357,15 +358,18 @@ export default function Home() {
           />
         </div>
       </section>
-      <section className='bg-[url("../public/assets/images/token-information-form.svg")] bg-no-repeat bg-[center_left_-200px] pt-[47px] pb-[90px]'>
+      <section className='bg-[url("../public/assets/images/token-information-form.svg")] max-[450px]:bg-[url("../public/assets/images/TokeninformationBackground-mobile.svg")] max-[450px]:px-6 bg-no-repeat bg-[center_left_-200px] max-[450px]:bg-[top_left] pt-[47px] pb-[90px]'>
         <div className='max-w-xl mx-auto w-full flex items-center justify-between max-[450px]:flex-col'>
-          <Image src={tokenDiagram} alt='diagram' className='mx-auto' />
+          <div className='max-[450px]:hidden mx-auto'>
+            <h4 className='text-lg-medium font-PoppinsMedium text-tonal-800 text-center'> VIXCO Token Distribution</h4>
+            <Image src={tokenDiagram} alt='diagram' />
+          </div>
           <div className='mb-5 max-w-[573px] w-full'>
             <hr className='inline-block linear-bg-3 p-[2px] w-[15%] mb-5' />
-            <h3 className='text-4xl-bold font-PoppinsBold text-tonal-800 mb-5'>
+            <h3 className='text-4xl-bold font-PoppinsBold text-tonal-800 mb-5 max-[450px]:text-2lg-bold max-[450px]:mb-[43px]'>
               VIXCO Token Information
             </h3>
-            <div className='py-[15px] px-[25px] flex items-center justify-between shadow-shadow-1 rounded-[17px] mb-[30px]'>
+            <div className='py-[15px] px-[25px] flex items-center justify-between shadow-shadow-1 rounded-[17px] mb-[50px] max-[450px]:bg-white max-[450px]:flex-wrap max-[450px]:gap-[20px]'>
               <div>
                 <h4 className='mb-[4px] font-PoppinsBold text-base-bold text-primary-50'>
                   Token Name :
@@ -391,6 +395,10 @@ export default function Home() {
                 </p>
               </div>
             </div>
+            <div className='max-[450px]:block hidden max-[450px]:mb-[23px]'>
+              <h4 className='text-lg-medium font-PoppinsMedium text-tonal-800 text-center'> VIXCO Token Distribution</h4>
+              <Image src={tokenDiagram} alt='diagram' className='mx-auto' />
+            </div>
             <ul className='flex flex-col gap-[25px]'>
               <li className='flex items-center justify-between'>
                 <div className='flex items-center'>
@@ -399,7 +407,7 @@ export default function Home() {
                     33% Payment Reserve
                   </p>
                 </div>
-                <p className='text-sm-medium text-tonal-800 font-PoppinsMedium w-1/2 text-left'>
+                <p className='text-sm-medium text-tonal-800 font-PoppinsMedium w-1/2 max-[450px]:w-fit text-left'>
                   660,000,000 VIX
                 </p>
               </li>
@@ -410,7 +418,7 @@ export default function Home() {
                     17% Eco-Rewards
                   </p>
                 </div>
-                <p className='text-sm-medium text-tonal-800 font-PoppinsMedium w-1/2 text-left'>
+                <p className='text-sm-medium text-tonal-800 font-PoppinsMedium w-1/2 max-[450px]:w-fit text-left'>
                   340,000,000 VIX
                 </p>
               </li>
@@ -421,7 +429,7 @@ export default function Home() {
                     15% Operation
                   </p>
                 </div>
-                <p className='text-sm-medium text-tonal-800 font-PoppinsMedium w-1/2 text-left'>
+                <p className='text-sm-medium text-tonal-800 font-PoppinsMedium w-1/2 max-[450px]:w-fit text-left'>
                   300,000,000 VIX
                 </p>
               </li>
@@ -432,7 +440,7 @@ export default function Home() {
                     13% Partnership Reserve
                   </p>
                 </div>
-                <p className='text-sm-medium text-tonal-800 font-PoppinsMedium w-1/2 text-left'>
+                <p className='text-sm-medium text-tonal-800 font-PoppinsMedium w-1/2 max-[450px]:w-fit text-left'>
                   260,000,000 VIX
                 </p>
               </li>
@@ -443,7 +451,7 @@ export default function Home() {
                     7% Marketing
                   </p>
                 </div>
-                <p className='text-sm-medium text-tonal-800 font-PoppinsMedium w-1/2 text-left'>
+                <p className='text-sm-medium text-tonal-800 font-PoppinsMedium w-1/2 max-[450px]:w-fit text-left'>
                   140,000,000 VIX
                 </p>
               </li>
@@ -454,7 +462,7 @@ export default function Home() {
                     5% Team
                   </p>
                 </div>
-                <p className='text-sm-medium text-tonal-800 font-PoppinsMedium w-1/2 text-left'>
+                <p className='text-sm-medium text-tonal-800 font-PoppinsMedium w-1/2 max-[450px]:w-fit text-left'>
                   100,000,000 VIX
                 </p>
               </li>
@@ -465,7 +473,7 @@ export default function Home() {
                     5% Advisors
                   </p>
                 </div>
-                <p className='text-sm-medium text-tonal-800 font-PoppinsMedium w-1/2 text-left'>
+                <p className='text-sm-medium text-tonal-800 font-PoppinsMedium w-1/2 max-[450px]:w-fit text-left'>
                   100,000,000 VIX
                 </p>
               </li>
@@ -476,7 +484,7 @@ export default function Home() {
                     4.9% Early Investor
                   </p>
                 </div>
-                <p className='text-sm-medium text-tonal-800 font-PoppinsMedium w-1/2 text-left'>
+                <p className='text-sm-medium text-tonal-800 font-PoppinsMedium w-1/2 max-[450px]:w-fit text-left'>
                   98,000,000 VIX
                 </p>
               </li>
@@ -487,7 +495,7 @@ export default function Home() {
                     0.1% Token Sale
                   </p>
                 </div>
-                <p className='text-sm-medium text-tonal-800 font-PoppinsMedium w-1/2 text-left'>
+                <p className='text-sm-medium text-tonal-800 font-PoppinsMedium w-1/2 max-[450px]:w-fit text-left'>
                   2,000,000 VIX
                 </p>
               </li>
@@ -495,20 +503,20 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className='bg-[url("../public/assets/images/RoadMapBackground.svg")] bg-cover bg-no-repeat bg-center py-[90px]' id='roadmap'>
+      <section className='bg-[url("../public/assets/images/RoadMapBackground.svg")] max-[450px]:px-6 max-[450px]:bg-[url("../public/assets/images/RoadMapBackground-mobile.svg")] bg-cover bg-no-repeat bg-center py-[90px] max-[450px]:py-[77px]' id='roadmap'>
         <div className='max-w-xl mx-auto w-full'>
-          <div className='w-fit mb-[80px]'>
+          <div className='w-fit mb-[80px] max-[450px]:mb-[60px]'>
             <h3 className='text-4xl-bold font-PoppinsBold'>RoadMap</h3>
             <hr className='inline-block bg-black p-[2px] w-[20%]' />
           </div>
-          <ul className='flex items-start'>
+          <ul className='flex items-start max-[450px]:flex-col'>
             <li className='relative'>
-              <h3 className='text-2lg-bold font-PoppinsBold text-primary-50 absolute left-[38%] transform -translate-x-1/2'>
+              <h3 className='text-2lg-bold font-PoppinsBold text-primary-50 absolute left-[38%] max-[450px]:left-[50%] transform -translate-x-1/2'>
                 Completed
               </h3>
               <Image src={Completed} alt='Completed' />
-              <ul className='absolute left-[12%] top-1/4 overflow-y-scroll h-2/3 roadmap cursor-pointer w-[75%]'>
-                <ul className='flex flex-col gap-[10px] w-[90%]'>
+              <div className='absolute left-[12%] top-1/4 overflow-y-scroll h-2/3 roadmap cursor-pointer w-[75%] max-[450px]:w-[90%] max-[450px]:left-[8%]'>
+                <ul className='flex flex-col gap-[10px] w-[95%]'>
                   <li className='text-md-regular font-PoppinsRegular text-tonal-800'>
                     Q1 2020: VIXCO project planning
                   </li>
@@ -560,29 +568,29 @@ export default function Home() {
                     listing, Kazakhstan VIXPAY service launch
                   </li>
                 </ul>
-              </ul>
+              </div>
             </li>
             <li className='relative'>
-              <h3 className='text-2lg-bold font-PoppinsBold text-primary-50 absolute left-[40%] transform -translate-x-1/2'>
+              <h3 className='text-2lg-bold font-PoppinsBold text-primary-50 absolute left-[40%] max-[450px]:left-[50%] transform -translate-x-1/2'>
                 Ongoing
               </h3>
               <Image src={Ongoing} alt='ongoing' />
-              <ul className='absolute left-[15%] top-[40%] overflow-y-scroll h-2/3 roadmap cursor-pointer w-[80%]'>
-                <ul className='flex flex-col gap-[10px] w-full'>
+              <div className='absolute left-[15%] top-[40%] overflow-y-scroll h-2/3 roadmap cursor-pointer w-[80%] max-[450px]:w-[90%] max-[450px]:left-[8%]'>
+                <ul className='flex flex-col gap-[10px] w-[95%]'>
                   <li className='text-md-regular font-PoppinsRegular text-tonal-800'>
                     Q2 2023: Additional domestic and international listings,
                     VIXPAY blockchain kiosk mass production
                   </li>
                 </ul>
-              </ul>
+              </div>
             </li>
             <li className='relative'>
-              <h3 className='text-2lg-bold font-PoppinsBold text-primary-50 absolute left-[40%] transform -translate-x-1/2'>
+              <h3 className='text-2lg-bold font-PoppinsBold text-primary-50 absolute left-[40%] max-[450px]:left-[50%] transform -translate-x-1/2'>
                 Future
               </h3>
               <Image src={Future} alt='future' />
-              <ul className='absolute left-[15%] top-[32%] overflow-y-scroll h-2/3 roadmap cursor-pointer w-[80%]'>
-                <ul className='flex flex-col gap-[10px] w-full'>
+              <div className='absolute left-[15%] top-[32%] overflow-y-scroll h-2/3 roadmap cursor-pointer w-[80%] max-[450px]:w-[90%] max-[450px]:left-[8%]'>
+                <ul className='flex flex-col gap-[10px] w-[95%]'>
                   <li className='text-md-regular font-PoppinsRegular text-tonal-800'>
                     Q3 2023: VIXPAY local advertising platform development,
                     VIXCO Defi service launch
@@ -592,33 +600,34 @@ export default function Home() {
                     additional overseas expansion
                   </li>
                 </ul>
-              </ul>
+              </div>
             </li>
           </ul>
         </div>
       </section>
-      <section className='pt-[90px] pb-[120px]'>
+      <section className='pt-[90px] pb-[120px] max-[450px]:px-6 max-[450px]:pb-0'>
         <div className='max-w-xl mx-auto w-full'>
           <div className='flex items-center justify-between mb-[86px]'>
             <div className='w-fit'>
-              <h3 className='text-4xl-bold font-PoppinsBold'>Notice</h3>
-              <hr className='inline-block bg-black p-[2px] w-[30%]' />
+              <h3 className='text-4xl-bold font-PoppinsBold max-[450px]:text-3xl-bold'>Notice</h3>
+              <hr className='inline-block bg-black p-[2px] w-[30%] max-[450px]:w-[45%]' />
             </div>
-            <Link href={'/notice'} className='flex items-center'>
+            <Link href={'/notice'} className='flex items-center max-[450px]:hidden'>
               <p className='mr-[10px] text-2lg-bold text-primary-50 font-PoppinsBold'>
                 View all notice
               </p>
               <Image src={NoticeLink} alt='notice link' />
             </Link>
           </div>
-          <div className='flex items-center justify-between max-[450px]:flex-col'>
+          <div className='flex items-center justify-between max-[450px]:flex-col max-[450px]:gap-5 max-[450px]:mb-[40px]'>
             <Link
               href={'/notice'}
               className='py-5 px-6 rounded-[18px] shadow-shadow-2 max-w-[610px] w-full'
             >
-              <div className='relative mb-[25px]'>
-                <Image src={NoticeCardBackground} alt='NoticeCardBackground' />
-                <h2 className='text-3lg-semibold font-PoppinsSemibold absolute left-[40px] top-2/4 text-white'>
+              <div className='relative mb-[25px] h-full'>
+                <Image src={NoticeCardBackground} alt='NoticeCardBackground' className='max-[450px]:hidden' />
+                <Image src={NotificationBackgroundCardMobile} alt='NoticeCardBackground' className='max-[450px]:block hidden w-full' />
+                <h2 className='text-3lg-semibold font-PoppinsSemibold absolute left-[40px] top-2/4 text-white max-[450px]:text-lg-bold'>
                   Listed on Bithumb
                 </h2>
               </div>
@@ -642,9 +651,10 @@ export default function Home() {
               href={'/notice'}
               className='py-5 px-6 rounded-[18px] shadow-shadow-2 max-w-[610px] w-full'
             >
-              <div className='relative mb-[25px]'>
-                <Image src={NoticeCardBackground} alt='NoticeCardBackground' />
-                <h2 className='text-3lg-semibold font-PoppinsSemibold absolute left-[40px] top-2/4 text-white'>
+              <div className='relative mb-[25px] h-full'>
+                <Image src={NoticeCardBackground} alt='NoticeCardBackground' className='max-[450px]:hidden' />
+                <Image src={NotificationBackgroundCardMobile} alt='NoticeCardBackground' className='max-[450px]:block hidden w-full ' />
+                <h2 className='text-3lg-semibold font-PoppinsSemibold absolute left-[40px] top-2/4 text-white max-[450px]:text-lg-bold'>
                   VIXCO Migration
                 </h2>
               </div>
@@ -666,6 +676,12 @@ export default function Home() {
               </div>
             </Link>
           </div>
+          <Link href={'/notice'} className='max-[450px]:flex max-[450px]:items-center hidden w-fit mx-auto'>
+            <p className='mr-[10px] text-2lg-bold text-primary-50 font-PoppinsBold'>
+              View all notice
+            </p>
+            <Image src={NoticeLink} alt='notice link' />
+          </Link>
         </div>
       </section>
     </main>

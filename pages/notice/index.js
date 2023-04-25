@@ -26,12 +26,12 @@ export default function Notice() {
             <Breadcrumb
               search={searchValue?.length > 0 ? 'Search Results' : ''}
             />
-            <div className='flex items-center border-b-2 max-w-[296px] border-tonal-900 w-full py-[7px]'>
+            <div className='flex items-center border-b-2 max-w-[296px] border-tonal-900 w-full py-[7px] max-[450px]:max-w-[100%]'>
               <Image src={searchIcon} alt='search' className='mr-[10px]' />
               <Input
                 placeholder={'Search'}
                 className={
-                  'font-PoppinsRegular text-tonal-800 text-base-regular outline-none placeholder:text-tonal-300'
+                  'font-PoppinsRegular text-tonal-800 text-base-regular outline-none placeholder:text-tonal-300 max-[450px]:w-full'
                 }
                 nameValue={'search'}
                 onGetValue={(e) => setSearchValue(e.target.value)}

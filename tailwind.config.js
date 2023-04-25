@@ -17,6 +17,7 @@ module.exports = {
       xl: '1240px',
     },
     fontSize: {
+      'xxs-regular': ['12px', '185%'],
       'sm-regular': ['14px', '150%'],
       'base-regular': ['16px', '135%'],
       'md-regular': ['16px', '185%'],
@@ -30,7 +31,9 @@ module.exports = {
       '3lg-semibold': ['36px', '135%'],
 
       'base-bold': ['16px', '135%'],
+      'lg-bold': ['20px', '135%'],
       '2lg-bold': ['24px', '120%'],
+      '3xl-bold': ['36px', '135%'],
       '4xl-bold': ['40px', '135%'],
       '5xl-bold': ['42px', '135%'],
       '6xl-bold': ['48px', '135%'],

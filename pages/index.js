@@ -5,6 +5,7 @@ import Button from '@/components/UI/button';
 import about from '../public/assets/images/about.svg';
 import bulb from '../public/assets/images/light-bulb.svg';
 import proccess from '../public/assets/images/proccess.svg';
+import proccessMobile from '../public/assets/images/proccess-mobile.svg'
 import dgMarketingVixpay from '../public/assets/images/dg-marketing-vixco.svg';
 import vixpayApp from '../public/assets/images/vixco-app.png';
 import googlePlay from '../public/assets/images/play-market.svg';
@@ -34,33 +35,33 @@ import NoticeCardBackground from '../public/assets/images/NotificationBackground
 export default function Home() {
   return (
     <main className='h-full grow'>
-      <section className='pb-[160px] shadow-hero-shadow pt-[116px] bg-[url("../public/assets/images/hero-bg.svg")] bg-cover bg-no-repeat relative'>
-        <div className='bg-[url("../public/assets/images/vixco-hero.svg")] bg-no-repeat bg-[top_30px_right_100px] bg-[length:676px_449px]'>
-          <div className='max-w-xl w-full mx-auto pt-[63px] pb-12'>
+      <section className='pb-[160px] max-[450px]:pt-[90px] max-[450px]:px-6 max-[450px]:bg-[url("../public/assets/images/home-mobile.svg")] shadow-hero-shadow pt-[116px] bg-[url("../public/assets/images/hero-bg.svg")] bg-cover bg-no-repeat relative'>
+        <div className='bg-[url("../public/assets/images/vixco-hero.svg")] bg-no-repeat bg-[top_30px_right_100px] bg-[length:676px_449px] max-[450px]:bg-[url("../public/assets/images/vixco-hero-mobile.svg")] max-[450px]:bg-[center_bottom_80px] max-[450px]:bg-contain'>
+          <div className='max-w-xl w-full mx-auto pt-[63px] pb-[334px]'>
             <h1 className='text-7xl-bold font-PoppinsBold linear-txt-1'>
               VIXCO
             </h1>
-            <p className='text-5xl-bold font-PoppinsBold linear-txt-2 max-w-[649px] w-full mb-[35px]'>
+            <p className='text-5xl-bold font-PoppinsBold linear-txt-2 max-w-[649px] w-full mb-[35px] max-[450px]:text-lg-bold max-[450px]:mb-5'>
               Bridging Stores, Customers, and Communities in Digital
             </p>
-            <p className='text-base-regular text-tonal-800 font-PoppinsRegular max-w-[514px] w-full mb-[35px]'>
+            <p className='text-base-regular text-tonal-800 font-PoppinsRegular max-w-[514px] w-full mb-[35px] max-[450px]:text-sm-regular max-[450px]:mb-[31px]'>
               VIXCO is a digital marketing platform that connects contactless
               ordering & payment with VIXCO token.
             </p>
             <Button
               className={
-                'font-PoppinsMedium text-lg-medium rounded-30 bg-white p-[16px_40px] hover:text-white hover:bg-transparent hover:border-white hover:shadow-shadow-button duration-150'
+                'font-PoppinsMedium text-lg-medium rounded-30 bg-white p-[16px_40px] hover:text-white hover:bg-transparent hover:border-white hover:shadow-shadow-button duration-150 max-[450px]:max-w-[191px]'
               }
             >
               WHITEPAPER
             </Button>
           </div>
         </div>
-        <div className='max-w-[1000px] hover:scale-105 duration-300 mx-auto w-full p-5 rounded-20 shadow-shadow-1 absolute bg-white -bottom-20 text-center left-1/2 transform -translate-x-1/2 cursor-pointer'>
+        <div className='max-w-[1000px] max-[450px]:w-[90%] hover:scale-105 duration-300 mx-auto w-full p-5 rounded-20 shadow-shadow-1 absolute bg-white -bottom-20 max-[450px]:-bottom-36 text-center left-1/2 transform -translate-x-1/2 cursor-pointer'>
           <h3 className='text-2lg-bold font-PoppinsBold linear-txt-3 mb-[15px] text-center'>
             VIXCO x VIXPAY
           </h3>
-          <p className='text-lg-regular font-PoppinsRegular text-tonal-800 max-w-[900px] w-full text-center mx-auto'>
+          <p className='text-lg-regular font-PoppinsRegular text-tonal-800 max-w-[900px] w-full text-center mx-auto max-[450px]:text-xxs-regular'>
             As an essential tool for the VIXCO token ecosystem, VIXPAY
             streamlines payments and ensures a seamless experience for both
             customers and kiosk owners. With VIXPAY, you can quickly and easily
@@ -68,17 +69,17 @@ export default function Home() {
           </p>
         </div>
       </section>
-      <section className='pt-32 pb-[57px]' id='about'>
-        <div className='max-w-xl w-full mx-auto flex items-center justify-between'>
+      <section className='pt-32 pb-[57px] max-[450px]:pb-0 max-[450px]:px-6 max-[450px]:pt-[230px]' id='about'>
+        <div className='max-w-xl w-full mx-auto flex items-center justify-between max-[450px]:flex max-[450px]:flex-col-reverse max-[450px]:gap-[30px]'>
           <Image src={about} alt='about' />
           <div className='max-w-[581px] w-full'>
-            <div className='w-fit'>
-              <h3 className='mb-1 text-tonal-800 text-4xl-bold font-PoppinsBold'>
+            <div className='w-fit mb-[34px] max-[450px]:mb-[50px]'>
+              <h3 className='mb-1 text-tonal-800 text-4xl-bold font-PoppinsBold max-[450px]:text-3xl-bold'>
                 About
               </h3>
-              <hr className='mb-[34px] inline-block bg-black p-[2px] w-[45%]' />
+              <hr className='inline-block bg-black p-[2px] w-[45%]' />
             </div>
-            <p className='text-tonal-500 font-PoppinsRegular text-md-regular mb-[45px]'>
+            <p className='text-tonal-500 font-PoppinsRegular text-md-regular mb-[45px] max-[450px]:mb-8'>
               The VIXCO project was initiated to address the problems in the
               South Korean card payment market, such as the "tri-party system"
               which prevents merchants from choosing a card company during the
@@ -93,7 +94,7 @@ export default function Home() {
                 The goal
               </p>
             </div>
-            <p className='text-tonal-500 text-lg-medium font-PoppinsMedium'>
+            <p className='text-tonal-500 text-lg-medium font-PoppinsMedium max-[450px]:text-sm-medium'>
               The goal of the VIXCO project is to maintain and strengthen
               connections between stores and local communities while promoting
               efficient store operations.{' '}
@@ -101,36 +102,37 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className='pt-[110px] pb-[150px] bg-[url("../public/assets/images/advantages-form.svg")] bg-no-repeat bg-cover bg-center' id='advantages'>
+      <section className='pt-[110px] pb-[150px] max-[450px]:px-6 max-[450px]:bg-[url("../public/assets/images/advantages-mobile.svg")] bg-[url("../public/assets/images/advantages-form.svg")] bg-no-repeat bg-cover bg-center' id='advantages'>
         <div className='max-w-xl w-full mx-auto mb-[52px]'>
           <div className='max-w-[772px] w-full mb-[51px]'>
-            <hr className='inline-block linear-bg-3 p-[2px] w-[10%]' />
-            <h2 className='text-tonal-800 text-4xl-bold font-PoppinsBold'>
+            <hr className='inline-block linear-bg-3 p-[2px] w-[10%] max-[450px]:w-[24%]' />
+            <h2 className='text-tonal-800 text-4xl-bold font-PoppinsBold max-[450px]:text-2lg-bold'>
               The advantages of VIXCO's global network configuration include:
             </h2>
           </div>
 
           <div className='flex items-center'>
-            <Image src={proccess} alt='proccess' className='h-full' />
+            <Image src={proccess} alt='proccess' className='h-full max-[450px]:hidden' />
+            <Image src={proccessMobile} alt='proccess' className='h-full hidden max-[450px]:block' />
             <ul className='h-full flex flex-col justify-between'>
-              <li className='flex items-center h-[112px] px-[25px] shadow-shadow-2 bg-white mb-[23px] rounded-[18px] max-w-[820px] w-full ml-[11px] text-base-regular hover:bg-primary-50 hover:shadow-shadow-2 hover:text-white cursor-pointer duration-300 hover:ml-[41px]'>
+              <li className='flex items-center max-[450px]:text-sm-regular max-[450px]:py-[15px] max-[450px]:text-tonal-500 max-[450px]:w-[90%] max-[450px]:pl-[15px] h-[112px] max-[450px]:h-full px-[25px] shadow-shadow-2 bg-white mb-[23px] rounded-[18px] max-w-[820px] w-full ml-[11px] text-base-regular hover:bg-primary-50 hover:shadow-shadow-2 hover:text-white cursor-pointer duration-300 hover:ml-[41px]'>
                 Providing consistent services to users and merchants: By
                 consistently providing services such as cross-border point
                 payments, digital marketing, and membership services, both users
                 and merchants experience convenience.
               </li>
-              <li className='flex items-center h-[112px] px-[25px] shadow-shadow-2 bg-white mb-[23px] rounded-[18px] max-w-[820px] w-full ml-[11px] text-base-regular hover:bg-primary-50 hover:shadow-shadow-2 hover:text-white cursor-pointer duration-300 hover:ml-[41px]'>
+              <li className='flex items-center max-[450px]:text-sm-regular max-[450px]:py-[15px] max-[450px]:text-tonal-500 max-[450px]:w-[90%] max-[450px]:pl-[15px] h-[112px] max-[450px]:h-full px-[25px] shadow-shadow-2 bg-white mb-[23px] rounded-[18px] max-w-[820px] w-full ml-[11px] text-base-regular hover:bg-primary-50 hover:shadow-shadow-2 hover:text-white cursor-pointer duration-300 hover:ml-[41px]'>
                 Opportunities for cross-border cooperation and expansion: By
                 linking Super Nodes and Working Nodes in each country, VIXCO
                 fosters international cooperation and provides business
                 expansion opportunities in the global market.
               </li>
-              <li className='flex items-center h-[112px] px-[25px] shadow-shadow-2 bg-white mb-[23px] rounded-[18px] max-w-[820px] w-full ml-[11px] text-base-regular hover:bg-primary-50 hover:shadow-shadow-2 hover:text-white cursor-pointer duration-300 hover:ml-[41px]'>
+              <li className='flex items-center max-[450px]:text-sm-regular max-[450px]:py-[15px] max-[450px]:text-tonal-500 max-[450px]:w-[90%] max-[450px]:pl-[15px] h-[112px] max-[450px]:h-full px-[25px] shadow-shadow-2 bg-white mb-[23px] rounded-[18px] max-w-[820px] w-full ml-[11px] text-base-regular hover:bg-primary-50 hover:shadow-shadow-2 hover:text-white cursor-pointer duration-300 hover:ml-[41px]'>
                 Offering global reward point memberships: Users can enjoy global
                 reward point memberships through the VIXCO platform, making
                 cross-border transactions smoother.
               </li>
-              <li className='flex items-center h-[112px] px-[25px] shadow-shadow-2 bg-white rounded-[18px] max-w-[820px] w-full ml-[11px] text-base-regular hover:bg-primary-50 hover:shadow-shadow-2 hover:text-white cursor-pointer duration-300 hover:ml-[41px]'>
+              <li className='flex items-center max-[450px]:text-sm-regular max-[450px]:py-[15px] max-[450px]:text-tonal-500 max-[450px]:w-[90%] max-[450px]:pl-[15px] h-[112px] max-[450px]:h-full px-[25px] shadow-shadow-2 bg-white rounded-[18px] max-w-[820px] w-full ml-[11px] text-base-regular hover:bg-primary-50 hover:shadow-shadow-2 hover:text-white cursor-pointer duration-300 hover:ml-[41px]'>
                 Stable transaction environment: VIXCO Tokens staked in Super
                 Nodes and Working Nodes ensure transaction stability and provide
                 a high level of service quality.
@@ -139,20 +141,20 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className='pt-[110px] pb-[60px]' id='vixpay'>
+      <section className='pt-[110px] pb-[60px] max-[450px]:px-6 max-[450px]:pb-[80px]' id='vixpay'>
         <div className='max-w-xl w-full mx-auto'>
-          <hr className='inline-block linear-bg-3 p-[2px] w-[6.2%] mb-5' />
-          <div className='w-full flex justify-between'>
+          <hr className='inline-block linear-bg-3 p-[2px] w-[6.2%] mb-5 max-[450px]:w-[23%]' />
+          <div className='w-full flex justify-between max-[450px]:flex max-[450px]:flex-col'>
             <div>
-              <div className='mb-[73px]'>
-                <h2 className='text-tonal-800 text-4xl-bold font-PoppinsBold max-w-[510px]'>
+              <div className='mb-[73px] max-[450px]:mb-[30px]'>
+                <h2 className='text-tonal-800 text-4xl-bold font-PoppinsBold max-w-[510px] max-[450px]:text-2lg-bold'>
                   Digital marketing based on <span>VIXPAY</span> data{' '}
                 </h2>
               </div>
-              <Image src={dgMarketingVixpay} alt='dg-marketing-vixpay' />
+              <Image src={dgMarketingVixpay} alt='dg-marketing-vixpay' className='max-[450px]:hidden' />
             </div>
-            <div className='max-w-[506px] w-full'>
-              <p className='mb-[52px] text-md-regular font-PoppinsRegular text-tonal-800'>
+            <div className='max-w-[506px] w-full max-[450px]:mb-[30px]'>
+              <p className='mb-[52px] text-md-regular font-PoppinsRegular text-tonal-800 max-[450px]:mb-[22px]'>
                 VIXCO provides various services on its platform using
                 Ethereum-based tokens, creating value for merchants and
                 customers through integrated solutions for payment, digital
@@ -169,11 +171,12 @@ export default function Home() {
                 marketing strategies.
               </p>
             </div>
+            <Image src={dgMarketingVixpay} alt='dg-marketing-vixpay' className='hidden max-[450px]:block' />
           </div>
         </div>
       </section>
       <section className='pt-[60px] pb-[150px]'>
-        <div className='max-w-xl mx-auto w-full bg-[url("../public/assets/images/vixpay-app.svg")] bg-cover bg-no-repeat h-[575px] pt-[70px] flex items-start justify-between px-[100px]'>
+        <div className='max-w-xl mx-auto max-[450px]:mx-0 max-[450px]:py-[75px] max-[450px]:h-full max-[450px]:bg-[url("../public/assets/images/vixpay-app-mobile.svg")] w-full bg-[url("../public/assets/images/vixpay-app.svg")] bg-cover max-[450px]:bg-center max-[450px]:rounded-20 bg-no-repeat h-[575px] pt-[70px] flex items-start justify-between px-[100px] max-[450px]:px-6 max-[450px]:flex max-[450px]:flex-col'>
           <div>
             <h3 className='text-4xl-bold font-PoppinsBold text-white'>
               Vixpay app
@@ -182,7 +185,7 @@ export default function Home() {
             <Image
               src={vixpayApp}
               alt='vixpayApp'
-              className='absolute ml-[50px]'
+              className='absolute ml-[50px] max-[450px]:static max-[450px]:ml-0'
             />
           </div>
           <div className='max-w-[522px] w-full'>
@@ -213,7 +216,7 @@ export default function Home() {
               <Button
                 className={
                   'rounded-[46px] border-[2px] border-white py-[13px] hover:scale-[1.05] duration-150 px-[42px] flex items-center ml-[26px] text-lg-medium text-white'
-                } 
+                }
               >
                 <Image src={appStore} alt='google play' className='mr-[10px]' />
                 App Store
@@ -223,7 +226,7 @@ export default function Home() {
         </div>
       </section>
       <section className='pt-[110px] pb-[118px] bg-[url("../public/assets/images/VIXCO-solution-background.svg")] bg-no-repeat bg-cover bg-center' id='solution'>
-        <div className='max-w-xl mx-auto w-full'>
+        <div className='max-w-xl mx-auto w-full max-[450px]:px-6'>
           <div className='mb-[55px]'>
             <h3 className='text-4xl-bold font-PoppinsBold text-tonal-800'>
               <span className='linear-txt-1'>VIXCO</span> Solution
@@ -231,7 +234,7 @@ export default function Home() {
             <hr className='inline-block bg-black p-[2px] w-[3.2%] mb-5' />
           </div>
           <ul className='flex flex-col gap-[70px]'>
-            <li className='flex items-center' data-aos='fade-up-right'>
+            <li className='flex items-center max-[450px]:flex-col'>
               <div className='flex items-start max-w-[522px] w-full mx-auto'>
                 <div className='relative flex items-center justify-center'>
                   <Image src={number} alt='numbers' width={30} height={30} />
@@ -254,7 +257,7 @@ export default function Home() {
               </div>
               <Image src={vixcoPos} alt='vixco terminal' />
             </li>
-            <li className='flex flex-row-reverse items-center fade-up-left'>
+            <li className='flex flex-row-reverse items-center max-[450px]:flex-col'>
               <div className='flex items-start max-w-[549px] w-full mx-auto'>
                 <div className='relative flex items-center justify-center'>
                   <Image src={number} alt='numbers' width={30} height={30} />
@@ -279,7 +282,7 @@ export default function Home() {
               </div>
               <Image src={dgSystem} alt='vixco terminal' />
             </li>
-            <li className='flex items-center'>
+            <li className='flex items-center max-[450px]:flex-col'>
               <div className='flex items-start max-w-[522px] w-full mx-auto'>
                 <div className='relative flex items-center justify-center'>
                   <Image src={number} alt='numbers' width={30} height={30} />
@@ -343,7 +346,7 @@ export default function Home() {
         </div>
       </section>
       <section className='bg-[url("../public/assets/images/token-information-form.svg")] bg-no-repeat bg-[center_left_-200px] pt-[47px] pb-[90px]'>
-        <div className='max-w-xl mx-auto w-full flex items-center justify-between'>
+        <div className='max-w-xl mx-auto w-full flex items-center justify-between max-[450px]:flex-col'>
           <Image src={tokenDiagram} alt='diagram' className='mx-auto' />
           <div className='mb-5 max-w-[573px] w-full'>
             <hr className='inline-block linear-bg-3 p-[2px] w-[15%] mb-5' />
@@ -596,7 +599,7 @@ export default function Home() {
               <Image src={NoticeLink} alt='notice link' />
             </Link>
           </div>
-          <div className='flex items-center justify-between'>
+          <div className='flex items-center justify-between max-[450px]:flex-col'>
             <Link
               href={'/notice'}
               className='py-5 px-6 rounded-[18px] shadow-shadow-2 max-w-[610px] w-full'

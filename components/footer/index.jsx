@@ -8,38 +8,38 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <footer className='pt-[22px] pb-12'>
+    <footer className='pt-[22px] pb-12 max-[450px]:px-6'>
       <div className='max-w-xl mx-auto w-full'>
-        <hr className='inline-block linear-bg-3 h-1 w-full mb-[45px]' />
+        <hr className='inline-block linear-bg-3 h-1 w-full mb-[45px] max-[450px]:h-[2px]' />
         <h4 className='text-primary-50 text-lg-medium font-PoppinsMedium text-center mb-7'>Join the Community</h4>
-        <ul className='flex items-center justify-between max-w-[950px] w-full mx-auto'>
+        <ul className='flex items-center justify-between max-w-[950px] w-full mx-auto max-[450px]:flex-col max-[450px]:items-start max-[450px]:gap-[15px]'>
           <li>
             <Link href={'/'} className='flex items-center text-lg-medium font-PoppinsMedium'>
-              <Image  src={Telegram} alt='telegram' className='mr-[10px]'  />
+              <Image src={Telegram} alt='telegram' className='mr-[10px]' />
               Notice
             </Link>
           </li>
           <li>
             <Link href={'/'} className='flex items-center text-lg-medium font-PoppinsMedium'>
-              <Image src={Telegram} alt='telegram' className='mr-[10px]'  />
+              <Image src={Telegram} alt='telegram' className='mr-[10px]' />
               Chat
             </Link>
           </li>
           <li>
             <Link href={'/'} className='flex items-center text-lg-medium font-PoppinsMedium'>
-              <Image src={Instagram} alt='telegram' className='mr-[10px]'  />
+              <Image src={Instagram} alt='telegram' className='mr-[10px]' />
               Instagram
             </Link>
           </li>
           <li>
             <Link href={'/'} className='flex items-center text-lg-medium font-PoppinsMedium'>
-              <Image src={Twitter} alt='telegram' className='mr-[10px]'  />
+              <Image src={Twitter} alt='telegram' className='mr-[10px]' />
               Twitter
             </Link>
           </li>
           <li>
             <Link href={'/'} className='flex items-center text-lg-medium font-PoppinsMedium'>
-              <Image src={email} alt='telegram' className='mr-[10px]'  />
+              <Image src={email} alt='telegram' className='mr-[10px]' />
               service@vixco.net
             </Link>
           </li>

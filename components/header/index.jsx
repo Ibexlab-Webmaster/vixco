@@ -34,7 +34,7 @@ const Header = () => {
   return (
     <>
       <header
-        className={`${isHeaderWhite ? 'bg-white duration-300 z-10 shadow-hero-shadow py-6 max-[450px]:py-5' : 'bg-transparent duration-300 py-9'
+        className={`${isHeaderWhite ? 'bg-white duration-200 z-10 shadow-hero-shadow py-6 max-[450px]:py-5' : 'bg-transparent duration-300 py-9'
           } fixed w-full left-0 top-0 z-10 max-[450px]:px-6 max-[450px]:py-[30px]`}
       >
         <div className='max-w-xl w-full mx-auto flex items-center justify-between'>

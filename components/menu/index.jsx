@@ -12,7 +12,7 @@ const MenuModal = ({ isOpen, onClose }) => {
 
         <CSSTransition
             in={isOpen}
-            timeout={100}
+            timeout={150}
             classNames={{
                 enter: styles.menuModalEnter,
                 enterActive: styles.menuModalEnterActive,
@@ -50,10 +50,10 @@ const MenuModal = ({ isOpen, onClose }) => {
                         <Link href={"/#roadmap"} className="p-2 font-PoppinsMedium text-md-regular text-tonal-600" onClick={onClose}>
                             RoadMap
                         </Link>
-                        <Link href={"/notice"} className="p-2 font-PoppinsMedium text-md-regular text-tonal-600" onClick={onClose}>
+                        <Link href={"/notice"} className="p-2 font-PoppinsMedium text-md-regular text-primary-50" onClick={onClose}>
                             Notice
                         </Link>
-                        <Link href={"/#vixpay"} className="p-2 font-PoppinsMedium text-md-regular text-tonal-600" onClick={onClose}>
+                        <Link href={"/#vixpay"} className="p-2 font-PoppinsMedium text-md-regular text-primary-50" onClick={onClose}>
                             Block scan
                         </Link>
                         {/* Add more menu items as needed */}

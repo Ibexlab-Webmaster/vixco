@@ -4,10 +4,10 @@ import NotificationBackgroundCardMobile from '../../public/assets/images/Notific
 
 export default function NoticePerPage({ notice }) {
   return (
-    <main className="h-full grow">
+    <main className="pb-[130px]">
       <section className="pt-[150px] pb-[15px] max-[450px]:pt-[120px] max-[450px]:px-6">
         <div className='max-w-xl pl-[44px] w-full mx-auto py-[100px] max-[450px]:pl-[15px] max-[450px]:py-[90px] max-[450px]:bg-center max-[450px]:bg-cover max-[450px]:bg-[url("/assets/images/NotificationPageBackground-mobile.svg")] bg-[url("/assets/images/NotificationPageBackground.svg")] bg-cover bg-no-repeat'>
-          <h2 className="text-6xl-bold text-white font-PoppinsBold max-[450px]:text-lg-bold">VIXCO Migration</h2>
+          <h2 className="text-6xl-bold text-white font-PoppinsBold max-[450px]:text-lg-bold">{notice.title}</h2>
         </div>
       </section>
       <section className="py-[15px] max-[450px]:px-6">

@@ -12,8 +12,8 @@ export default function Notice() {
   const [searchValue, setSearchValue] = useState('');
 
   return (
-    <main className='h-full grow'>
-      <section className='pt-[116px] max-[450px]:pt-[88px] max-[450px]:px-6 max-[450px]:bg-[url("../public/assets/images/NoticepageBackground-mobile.svg")] bg-[url("../public/assets/images/NoticepageBackground.svg")] bg-cover bg-no-repeat'>
+    <main className='pb-[130px]'>
+      <section className='pt-[188px] max-[450px]:pt-[88px] pb-[126px] max-[450px]:px-6 max-[450px]:bg-[url("../public/assets/images/NoticepageBackground-mobile.svg")] bg-[url("../public/assets/images/NoticepageBackground.svg")] bg-cover bg-no-repeat'>
         <div className='max-w-xl w-full mx-auto max-[450px]:py-[80px]'>
           <h2 className='text-7xl-bold font-PoppinsBold linear-txt-2 max-[450px]:text-4xl-bold'>
             Notice
@@ -40,7 +40,7 @@ export default function Notice() {
               />
             </div>
           </div>
-          <div className='w-full flex items-center justify-between max-[450px]:flex-col max-[450px]:gap-5'>
+          <div className='w-full flex items-stretch justify-between max-[450px]:flex-col max-[450px]:gap-5'>
             {noticeDatas
               ?.filter((n) =>
                 n.title.toLowerCase().includes(searchValue.toLowerCase()) ||

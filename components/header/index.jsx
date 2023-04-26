@@ -34,11 +34,11 @@ const Header = () => {
   return (
     <>
       <header
-        className={`${isHeaderWhite ? 'bg-white duration-200 z-10 shadow-hero-shadow py-6 max-[450px]:py-5' : 'bg-transparent duration-300 py-9'
+        className={`${isHeaderWhite ? 'bg-white duration-200 z-10 shadow-shadow-1 py-6 max-[450px]:py-5' : 'bg-transparent duration-300 py-9'
           } fixed w-full left-0 top-0 z-10 max-[450px]:px-6 max-[450px]:py-[30px]`}
       >
         <div className='max-w-xl w-full mx-auto flex items-center justify-between'>
-          <Link href='/'>
+          <Link href='/#home' scroll={false}>
             <Image src={logo} alt='Picture of the author' />
           </Link>
           <nav className='max-w-[760px] w-full max-[450px]:hidden'>
@@ -46,6 +46,7 @@ const Header = () => {
               <li>
                 <Link
                   href={'/#about'}
+                  scroll={false}
                   className='p-2 font-PoppinsMedium text-base-medium text-tonal-600'
                 >
                   About
@@ -54,6 +55,7 @@ const Header = () => {
               <li>
                 <Link
                   href={'/#advantages'}
+                  scroll={false}
                   className='p-2 font-PoppinsMedium text-base-medium text-tonal-600'
                 >
                   Advantages
@@ -62,6 +64,7 @@ const Header = () => {
               <li>
                 <Link
                   href={'/#vixpay'}
+                  scroll={false}
                   className='p-2 font-PoppinsMedium text-base-medium text-tonal-600'
                 >
                   Vixpay
@@ -70,6 +73,7 @@ const Header = () => {
               <li>
                 <Link
                   href={'/#solution'}
+                  scroll={false}
                   className='p-2 font-PoppinsMedium text-base-medium text-tonal-600'
                 >
                   Solution
@@ -78,6 +82,7 @@ const Header = () => {
               <li>
                 <Link
                   href={'/#token'}
+                  scroll={false}
                   className='p-2 font-PoppinsMedium text-base-medium text-tonal-600'
                 >
                   VIXCO Token
@@ -86,6 +91,7 @@ const Header = () => {
               <li>
                 <Link
                   href={'/#roadmap'}
+                  scroll={false}
                   className='p-2 font-PoppinsMedium text-base-medium text-tonal-600'
                 >
                   RoadMap

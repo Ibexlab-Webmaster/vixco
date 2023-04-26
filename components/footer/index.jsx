@@ -14,31 +14,31 @@ const Footer = () => {
         <h4 className='text-primary-50 text-lg-medium font-PoppinsMedium text-center mb-7'>Join the Community</h4>
         <ul className='flex items-center justify-between max-w-[950px] w-full mx-auto max-[450px]:flex-col max-[450px]:items-start max-[450px]:gap-[15px]'>
           <li>
-            <Link href={'/'} className='flex items-center text-lg-medium font-PoppinsMedium'>
+            <Link href={'https://t.me/vixcokorea'} target='_blank' className='flex items-center text-lg-medium font-PoppinsMedium'>
               <Image src={Telegram} alt='telegram' className='mr-[10px]' />
               Notice
             </Link>
           </li>
           <li>
-            <Link href={'/'} className='flex items-center text-lg-medium font-PoppinsMedium'>
+            <Link href={'https://t.me/koreavixco'} target='_blank' className='flex items-center text-lg-medium font-PoppinsMedium'>
               <Image src={Telegram} alt='telegram' className='mr-[10px]' />
               Chat
             </Link>
           </li>
           <li>
-            <Link href={'/'} className='flex items-center text-lg-medium font-PoppinsMedium'>
+            <Link href={'https://www.instagram.com/vixco_official/'} target='_blank' className='flex items-center text-lg-medium font-PoppinsMedium'>
               <Image src={Instagram} alt='telegram' className='mr-[10px]' />
               Instagram
             </Link>
           </li>
           <li>
-            <Link href={'/'} className='flex items-center text-lg-medium font-PoppinsMedium'>
+            <Link href={'https://twitter.com/vixcoofficial'} target='_blank' className='flex items-center text-lg-medium font-PoppinsMedium'>
               <Image src={Twitter} alt='telegram' className='mr-[10px]' />
               Twitter
             </Link>
           </li>
           <li>
-            <Link href={'/'} className='flex items-center text-lg-medium font-PoppinsMedium'>
+            <Link href={'service@vixco.net'} target='_blank' className='flex items-center text-lg-medium font-PoppinsMedium'>
               <Image src={email} alt='telegram' className='mr-[10px]' />
               service@vixco.net
             </Link>

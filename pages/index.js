@@ -51,10 +51,12 @@ export default function Home() {
             </p>
             <Button
               className={
-                'font-PoppinsMedium text-lg-medium rounded-30 bg-white p-[16px_40px] hover:text-white hover:bg-transparent hover:border-white hover:shadow-shadow-button duration-150 max-[450px]:max-w-[191px]'
+                'font-PoppinsMedium text-lg-medium rounded-30 bg-white hover:text-white hover:bg-transparent hover:border-white hover:shadow-shadow-button duration-150 max-[450px]:max-w-[191px]'
               }
             >
-              WHITEPAPER
+              <Link href={'/files/VIXCO_Whitepaper_Eng.pdf'} target='_blank' className='p-[16px_40px] inline-block'>
+                WHITEPAPER
+              </Link>
             </Button>
           </div>
         </div>
@@ -207,23 +209,27 @@ export default function Home() {
             <div className='flex items-center max-[450px]:flex-col max-[450px]:w-full max-[450px]:gap-[26px]'>
               <Button
                 className={
-                  'rounded-[46px] max-[450px]:w-full max-[450px]:justify-center max-[450px]:mx-0 border-[2px] border-white py-[13px] hover:scale-[1.05] duration-150 px-[42px] flex items-center text-lg-medium text-white'
+                  'font-PoppinsMedium rounded-[46px] max-[450px]:w-full max-[450px]:justify-center max-[450px]:mx-0 border-[2px] border-white hover:scale-[1.05] duration-150 flex items-center text-lg-medium text-white'
                 }
               >
-                <Image
-                  src={googlePlay}
-                  alt='google play'
-                  className='mr-[10px]'
-                />
-                Google play
+                <Link href={"https://play.google.com/store/apps/details?id=com.yoshop.vixpay"} target='_blank' className='flex items-center px-[42px] py-[13px]'>
+                  <Image
+                    src={googlePlay}
+                    alt='google play'
+                    className='mr-[10px]'
+                  />
+                  Google play
+                </Link>
               </Button>
               <Button
                 className={
-                  'rounded-[46px] max-[450px]:w-full max-[450px]:justify-center max-[450px]:mx-0 border-[2px] border-white py-[13px] hover:scale-[1.05] duration-150 px-[42px] flex items-center ml-[26px] text-lg-medium text-white'
+                  'font-PoppinsMedium rounded-[46px] max-[450px]:w-full max-[450px]:justify-center max-[450px]:mx-0 border-[2px] border-white hover:scale-[1.05] duration-150 flex items-center ml-[26px] text-lg-medium text-white'
                 }
               >
+                <Link href={"https://apps.apple.com/kr/app/apple-store/id1573554528"} target='_blank' className='flex items-center px-[42px] py-[13px]'>
                 <Image src={appStore} alt='google play' className='mr-[10px]' />
                 App Store
+                </Link>
               </Button>
             </div>
           </div>

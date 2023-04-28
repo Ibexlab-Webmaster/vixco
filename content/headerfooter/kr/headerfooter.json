@@ -1,0 +1,44 @@
+{
+  "header": {
+    "logo": "/assets/images/logo.svg",
+    "about": "About",
+    "advantages": "Advantages",
+    "vixpay": "Vixpay",
+    "solution": "Solution",
+    "vixcoToken": "VIXCO Token",
+    "roadmap": "RoadMap",
+    "notice": "Notice",
+    "blockscan": {
+      "title" : "Block scan",
+      "link" : "https://scan.finenex.net/"
+  }
+  },
+  "footer": {
+    "communityTitle": "Join the Community",
+    "notice": {
+      "title": "Notice",
+      "image": "/assets/images/telegram.svg",
+      "link": "https://t.me/vixcokorea"
+    },
+    "chat": {
+      "title": "Chat",
+      "image": "/assets/images/telegram.svg",
+      "link": "https://t.me/koreavixco"
+    },
+    "instagram": {
+      "title": "Instagram",
+      "image": "assets/images/instagram.svg",
+      "link": "https://www.instagram.com/vixco_official"
+    },
+    "twitter": {
+      "title": "Twitter",
+      "image": "/assets/images/twitter.svg",
+      "link": "https://twitter.com/vixcoofficial"
+    },
+    "email": {
+      "title": "service@vixco.net",
+      "image": "/assets/images/email.svg",
+      "link": "mailto: service@vixco.net"
+    }
+  }
+}

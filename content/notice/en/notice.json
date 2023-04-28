@@ -1,0 +1,10 @@
+{
+  "hero": {
+    "title": "Notice"
+  },
+  "input": {
+    "icon": "/assets/images/search.svg",
+    "placeholder": "Search",
+    "result": "Search Results"
+  }
+}

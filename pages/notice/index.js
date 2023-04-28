@@ -7,16 +7,42 @@ import searchIcon from '../../public/assets/images/search.svg';
 import NoticeCardBackground from '../../public/assets/images/NotificationBackground.svg';
 import { noticeDatas } from '@/constants/notice';
 import NotificationBackgroundCardMobile from '../../public/assets/images/NotificationPageBackground-mobile.svg'
+import { useTina } from "tinacms/dist/react";
+import client from '@/tina/__generated__/client';
 
-export default function Notice() {
+export async function getStaticProps({ locale }) {
+
+  const { data, query, variables } = await client.queries.notice({
+    relativePath: `${locale}/notice.json`,
+  });
+
+  return {
+    props: {
+      data,
+      query,
+      variables
+    },
+  };
+}
+
+export default function Notice(props) {
   const [searchValue, setSearchValue] = useState('');
+
+  const { data } = useTina({
+    query: props.query,
+    variables: props.variables,
+    data: props.data,
+  });
+
+  let pageData = data.notice;
+  console.log(pageData)
 
   return (
     <main className='pb-[130px]'>
       <section className='pt-[188px] max-[450px]:pt-[88px] pb-[126px] max-[450px]:px-6 max-[450px]:bg-[url("../public/assets/images/NoticepageBackground-mobile.svg")] bg-[url("../public/assets/images/NoticepageBackground.svg")] bg-cover bg-no-repeat'>
         <div className='max-w-xl w-full mx-auto max-[450px]:py-[80px]'>
           <h2 className='text-7xl-bold font-PoppinsBold linear-txt-2 max-[450px]:text-4xl-bold'>
-            Notice
+            {pageData.hero.title}
           </h2>
         </div>
       </section>
@@ -24,12 +50,12 @@ export default function Notice() {
         <div className='max-w-xl w-full mx-auto'>
           <div className='flex items-center justify-between mb-[90px] max-[450px]:flex-col max-[450px]:w-full max-[450px]:items-start max-[450px]:gap-[35px]'>
             <Breadcrumb
-              search={searchValue?.length > 0 ? 'Search Results' : ''}
+              search={searchValue?.length > 0 ? pageData.input.result : ''}
             />
             <div className='flex items-center border-b-2 max-w-[296px] border-tonal-900 w-full py-[7px] max-[450px]:max-w-[100%]'>
-              <Image src={searchIcon} alt='search' className='mr-[10px]' />
+              <Image src={pageData.input.icon} width={20} height={20} alt='search' className='mr-[10px]' />
               <Input
-                placeholder={'Search'}
+                placeholder={pageData.input.placeholder}
                 className={
                   'font-PoppinsRegular text-tonal-800 text-base-regular outline-none placeholder:text-tonal-300 max-[450px]:w-full'
                 }

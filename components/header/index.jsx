@@ -8,7 +8,7 @@ import MenuModal from '../menu';
 
 const options = [
   { value: 'en', label: 'ENG' },
-  { value: 'kr', label: '한국인' },
+  { value: 'kr', label: '한국어' },
 ];
 
 const Header = () => {

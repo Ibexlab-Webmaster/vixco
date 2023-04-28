@@ -1,4 +1,7 @@
 import { defineConfig } from "tinacms";
+import { home } from "./custom_schemas/home/home";
+import { notice } from "./custom_schemas/notice/notice";
+import { headerfooter } from "./custom_schemas/headerfooter/headerfooter";
 
 // Your hosting provider likely exposes this as an environment variable
 const branch = process.env.HEAD || process.env.VERCEL_GIT_COMMIT_REF || "main";
@@ -14,36 +17,15 @@ export default defineConfig({
   },
   media: {
     tina: {
-      mediaRoot: "",
+      mediaRoot: "assets/images",
       publicFolder: "public",
     },
   },
   schema: {
     collections: [
-      {
-        name: "post",
-        label: "Posts",
-        path: "content/posts",
-        fields: [
-          {
-            type: "string",
-            name: "title",
-            label: "Title",
-            isTitle: true,
-            required: true,
-          },
-          {
-            type: "rich-text",
-            name: "body",
-            label: "Body",
-            isBody: true,
-          },
-        ],
-        ui: {
-          // This is an DEMO router. You can remove this to fit your site
-          router: ({ document }) => `/demo/blog/${document._sys.filename}`,
-        },
-      },
+      home,
+      notice,
+      headerfooter
     ],
   },
 });

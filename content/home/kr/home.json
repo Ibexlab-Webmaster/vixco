@@ -1,0 +1,250 @@
+{
+  "hero": {
+    "title": "VIXCO",
+    "text": "Bridging Stores, Customers, and Communities in Digital",
+    "subtext": "VIXCO is a digital marketing platform that connects contactless ordering & payment with VIXCO token.",
+    "button": "WHITEPAPER",
+    "heroCard": {
+      "title": "VIXCO x VIXPAY",
+      "text": "As an essential tool for the VIXCO token ecosystem, VIXPAY streamlines payments and ensures a seamless experience for both customers and kiosk owners. With VIXPAY, you can quickly and easily make purchases and payments."
+    }
+  },
+  "about": {
+    "title": "About",
+    "text": "The VIXCO project was initiated to address the problems in the South Korean card payment market, such as the 'tri-party system' which prevents merchants from choosing a card company during the transaction process and the difficulties in managing funds due to the delayed receipt of sales proceeds. To resolve these issues, the blockchain-based POS terminal and VIXPAY service were developed.",
+    "image": "/assets/images/about.svg",
+    "goal": {
+      "title": "The goal",
+      "image": "/assets/images/light-bulb.svg",
+      "text": "The goal of the VIXCO project is to maintain and strengthen connections between stores and local communities while promoting efficient store operations."
+    }
+  },
+  "globalNetworkAdvantages": {
+    "title": "The advantages of VIXCO's global network configuration include:",
+    "image": "/assets/images/proccess.svg",
+    "imageMobile": "/assets/images/proccess-mobile.svg",
+    "items": [
+      {
+        "text": "Providing consistent services to users and merchants: By consistently providing services such as cross-border point payments, digital marketing, and membership services, both users and merchants experience convenience."
+      },
+      {
+        "text": "Opportunities for cross-border cooperation and expansion: By linking Super Nodes and Working Nodes in each country, VIXCO fosters international cooperation and provides business expansion opportunities in the global market."
+      },
+      {
+        "text": "Offering global reward point memberships: Users can enjoy global reward point memberships through the VIXCO platform, making cross-border transactions smoother."
+      },
+      {
+        "text": "Stable transaction environment: VIXCO Tokens staked in Super Nodes and Working Nodes ensure transaction stability and provide a high level of service quality."
+      }
+    ]
+  },
+  "dgMarketing": {
+    "title": "Digital marketing based on ",
+    "vixpay": "VIXPAY",
+    "data": " data",
+    "image": "/assets/images/dg-marketing-vixco.svg",
+    "text": "VIXCO provides various services on its platform using Ethereum-based tokens, creating value for merchants and customers through integrated solutions for payment, digital marketing, and CRM services. This forms the foundation for the continuous activation and growth of the VIXCO ecosystem, allowing it to develop as an innovative blockchain-based payment and marketing platform.",
+    "text2": "Customer information and payment data obtained through the VIXPAY service become valuable digital marketing assets. Using this information, merchants can analyze customer purchase patterns, preferences, and behaviors to establish effective marketing strategies."
+  },
+  "vixpayApp": {
+    "title": "Vixpay app",
+    "image": "/assets/images/vixco-app.png",
+    "text": "FOR YOUR BUSINESS",
+    "subtext": "VIXPAY is a blockchain platform that connects merchants and consumers. It can be easily used at merchants nationwide without complicated sign-up or charging procedures, while supporting the rewards and payment functions of Vixpay. In particular, focusing on the convenience of consumers and merchants, you can use it simply by presenting a QR code and entering a password."
+  },
+  "solution": {
+    "vixco": "VIXCO",
+    "title": "Solution",
+    "numberImage": "/assets/images/number.svg",
+    "items": [
+      {
+        "id": 1,
+        "title": "VIXCO Blockchain POS Terminal",
+        "text": "Blockchain POS and kiosk terminals connected to VIXCO Working Node are the core infrastructure of the VIXCO platform. These terminals come equipped with wallets, allowing users to earn or pay with VIXCO Point tokens and serving as a connection point between customers and stores.",
+        "image": "/assets/images/vixco-b-pos.svg"
+      },
+      {
+        "id": 2,
+        "title": "Digital Marketing System",
+        "text": "The digital marketing system using blockchain POS and kiosk terminals, and cloud-based POS systems is a powerful tool for providing efficient and differentiated marketing strategies to stores. Hyperlocal digital marketing system can be used as an advertising platform for companies that want to advertise in the area. Stores can receive fees from companies and post advertisements on kiosk terminals.",
+        "image": "/assets/images/dg-system.svg"
+      },
+      {
+        "id": 3,
+        "title": "VIXPAY Payment System",
+        "text": "VIXPAY is a blockchain-based payment system that provides a convenient solution for customers to accumulate and pay with VIXCO Point tokens using a mobile app. Combined with blockchain POS and kiosk terminals, it creates an environment where customers can easily and quickly accumulate and use points.",
+        "image": "/assets/images/vixo-payment-system.png"
+      }
+    ]
+  },
+  "token": {
+    "vixco": "VIXCO",
+    "title": "Token",
+    "tokenModel": {
+      "title": "ERC - 20",
+      "image": "/assets/images/ethereum.svg"
+    },
+    "text": "VIXCO is an ERC20 token issued on the Ethereum blockchain network, and it is a utility token that can be exchanged with Point tokens used on the VIXCO platform. The VIXCO platform provides payment, digital marketing, CRM services, and additional services to merchants and customers based on a Staking-based token economy. To operate a Working Node, a certain amount of VIXCO tokens must be staked, which allows partners to recruit VIXCO merchants and customers.",
+    "subtext": "The commission revenue generated on the VIXCO platform is distributed according to the proportion of VIXCO staked in the Working Node, which increases the demand and value of the VIXCO token.",
+    "image": "/assets/images/vixco-token.svg"
+  },
+  "tokenInfos": {
+    "title": "VIXCO Token Information",
+    "infos": [
+      {
+        "title": "Token Name :",
+        "text": "VIXCO (Ticker : VIX)"
+      },
+      {
+        "title": "Total Supply:",
+        "text": "200,000,000 VIX"
+      },
+      {
+        "title": "Protocol:",
+        "text": "ERC-20"
+      }
+    ],
+    "diagram": {
+      "title": "VIXCO Token Distribution",
+      "image": "/assets/images/vixco-token-diagram.svg"
+    },
+    "items": [
+      {
+        "image": "/assets/images/payment-reserve.svg",
+        "title": "33% Payment Reserve",
+        "price": "660,000,000 VIX"
+      },
+      {
+        "image": "/assets/images/eco-rewards.svg",
+        "title": "17% Eco-Rewards",
+        "price": "340,000,000 VIX"
+      },
+      {
+        "image": "/assets/images/operation.svg",
+        "title": "15% Operation",
+        "price": "300,000,000 VIX"
+      },
+      {
+        "image": "/assets/images/partnershipreserve.svg",
+        "title": "13% Partnership Reserve",
+        "price": "260,000,000 VIX"
+      },
+      {
+        "image": "/assets/images/marketing.svg",
+        "title": "7% Marketing",
+        "price": "140,000,000 VIX"
+      },
+      {
+        "image": "/assets/images/team.svg",
+        "title": "5% Team",
+        "price": "100,000,000 VIX"
+      },
+      {
+        "image": "/assets/images/advicers.svg",
+        "title": "5% Advisors",
+        "price": "100,000,000 VIX"
+      },
+      {
+        "image": "/assets/images/earlyinvester.svg",
+        "title": "4.9% Early Investor",
+        "price": "98,000,000 VIX"
+      },
+      {
+        "image": "/assets/images/tokensale.svg",
+        "title": "0.1% Token Sale",
+        "price": "2,000,000 VIX"
+      }
+    ]
+  },
+  "roadmap": {
+    "title": "RoadMap",
+    "completed": {
+      "title": "Completed",
+      "image": "/assets/images/completed.svg",
+      "items": [
+        {
+          "text": "Q1 2020: VIXCO project planning"
+        },
+        {
+          "text": "Q2 2020: VIXCO whitepaper release and business model planning"
+        },
+        {
+          "text": "Q3 2020: VIXCO project payment and blockchain solution partner, Ibexlab Co., Ltd., joins VIXCO project"
+        },
+        {
+          "text": "Q4 2020: Verification of blockchain payment system in Kazakhstan (www.yoshop.kz), blockchain POS terminal design, VIXPAY service planning, and system design"
+        },
+        {
+          "text": "Q1 2021: Development of unmanned loan kiosk beta version, blockchain POS terminal development, staking & loan service development"
+        },
+        {
+          "text": "Q2 2021: Wallet and token platform development completed, blockchain POS terminal development completed, VIXPAY pilot service opened, staking service development completed"
+        },
+        {
+          "text": "Q3 2021: Blockchain POS terminal release completed, VIXPAY service launch, PG registration and Rent Pay service launch, unmanned loan kiosk development, loan service development"
+        },
+        {
+          "text": "Q4 2021: Unmanned loan service launch, Kazakhstan blockchain POS terminal supply, overseas branch establishment"
+        },
+        {
+          "text": "Q1 2022: VIXPAY financial services (accounts receivable Buy & Sell) and food supply service for franchisees"
+        },
+        {
+          "text": "Q3 2022: Church donation kiosk pilot service, Kazakhstan VIXPAY service testing"
+        },
+        {
+          "text": "Q4 2022: Kazakhstan VIXPAY beta service opening"
+        },
+        {
+          "text": "Q1 2023: Bithumb listing and follow-up measures after listing, Kazakhstan VIXPAY service launch"
+        }
+      ]
+    },
+    "ongoing": {
+      "title": "Ongoing",
+      "image": "/assets/images/ongoing.svg",
+      "items": [
+        {
+          "text": "Q2 2023: Additional domestic and international listings, VIXPAY blockchain kiosk mass production"
+        }
+      ]
+    },
+    "future": {
+      "title": "Future",
+      "image": "/assets/images/future.svg",
+      "items": [
+        {
+          "text": "Q3 2023: VIXPAY local advertising platform development, VIXCO Defi service launch"
+        },
+        {
+          "text": "Q4 2023: VIXPAY local advertising service launch, VIXPAY additional overseas expansion"
+        }
+      ]
+    }
+  },
+  "notice": {
+    "title": "Notice",
+    "link": {
+      "title": "View all notice",
+      "image": "/assets/images/Chevrone.svg"
+    },
+    "imageItems": "/assets/images/NotificationBackground.svg",
+    "imageItemsMobile": "/assets/images/NotificationPageBackground-mobile.svg",
+    "items": [
+      {
+        "id": 1,
+        "title": "Listed on Bithumb",
+        "date": "2023.1.5",
+        "text": "Dear Vixco community",
+        "subtext": "We are announcing that VIXCO will be listed on the KRW/BTC market today on Bithumb, the No. 1 virtual asset platform ..."
+      },
+      {
+        "id": 2,
+        "title": "VIXCO Migration",
+        "date": "2022.2.13",
+        "text": "Hello VIXCO community.",
+        "subtext": "VIXCO has carefully moved VIX tokens to enhance transparency and efficiency. Swaps will take place within the fly bit exchange ..."
+      }
+    ]
+  }
+}

@@ -1,8 +1,10 @@
 import Breadcrumb from "@/components/breadCrumb";
 import { noticeDatas } from "@/constants/notice";
-import NotificationBackgroundCardMobile from '../../public/assets/images/NotificationPageBackground-mobile.svg'
+import { useTina } from "tinacms/dist/react";
+import client from "@/tina/__generated__/client";
 
-export default function NoticePerPage({ notice }) {
+export default function NoticePerPage({ notice, data, query, variables }) {
+  console.log(data, query, variables)
   return (
     <main className="pb-[130px]">
       <section className="pt-[150px] pb-[15px] max-[450px]:pt-[120px] max-[450px]:px-6">
@@ -26,6 +28,7 @@ export default function NoticePerPage({ notice }) {
 }
 
 export async function getStaticPaths() {
+
   const data = noticeDatas
 
   const paths = data.map((notice) => ({
@@ -35,10 +38,21 @@ export async function getStaticPaths() {
   return { paths, fallback: false };
 }
 
-export async function getStaticProps({ params }) {
-  const data = noticeDatas
+export async function getStaticProps({ params, locale }) {
+  const { data, query, variables } = await client.queries.headerfooter({
+    relativePath: `${locale}/headerfooter.json`,
+  });
 
-  const notice = data.find((n) => n.id.toString() === params.id);
+  const datas = noticeDatas
 
-  return { props: { notice } };
+  const notice = datas.find((n) => n.id.toString() === params.id);
+
+  return {
+    props: {
+      notice,
+      data,
+      query,
+      variables
+    }
+  };
 }

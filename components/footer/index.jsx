@@ -38,7 +38,7 @@ const Footer = () => {
             </Link>
           </li>
           <li>
-            <Link href={'service@vixco.net'} target='_blank' className='flex items-center text-lg-medium font-PoppinsMedium'>
+            <Link href={'mailto: service@vixco.net'} className='flex items-center text-lg-medium font-PoppinsMedium'>
               <Image src={email} alt='telegram' className='mr-[10px]' />
               service@vixco.net
             </Link>

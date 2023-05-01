@@ -3,9 +3,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import Breadcrumb from '@/components/breadCrumb';
 import Input from '@/components/input';
-import searchIcon from '../../public/assets/images/search.svg';
 import NoticeCardBackground from '../../public/assets/images/NotificationBackground.svg';
-import { noticeDatas } from '@/constants/notice';
 import NotificationBackgroundCardMobile from '../../public/assets/images/NotificationPageBackground-mobile.svg'
 import { useTina } from "tinacms/dist/react";
 import client from '@/tina/__generated__/client';

@@ -32,6 +32,7 @@ export default function Home(props) {
   });
 
   let pageData = data.home;
+  
   return (
     <main className='pb-[130px]' id='home'>
       <section className='pb-[160px] max-[450px]:pt-[40px] max-[450px]:px-6 max-[450px]:bg-[url("../public/assets/images/home-mobile.svg")] pt-[116px] bg-[url("../public/assets/images/hero-bg.svg")] bg-cover bg-no-repeat relative max-[450px]:pb-[120px]'>

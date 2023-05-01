@@ -39,7 +39,7 @@ const MenuModal = ({ isOpen, onClose }) => {
                             Advantages
                         </Link>
                         <Link href={"/#vixpay"} className="p-2 font-PoppinsMedium text-md-regular text-tonal-600" onClick={onClose}>
-                            Vixpay
+                            VIXPAY
                         </Link>
                         <Link href={"/#solution"} className="p-2 font-PoppinsMedium text-md-regular text-tonal-600" onClick={onClose}>
                             Solution

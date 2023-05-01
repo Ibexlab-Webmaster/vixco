@@ -70,7 +70,7 @@ const Header = () => {
                   scroll={false}
                   className='p-2 font-PoppinsMedium text-base-medium text-tonal-600'
                 >
-                  Vixpay
+                  VIXPAY
                 </Link>
               </li>
               <li>

@@ -7,6 +7,7 @@ import googlePlay from '../public/assets/images/play-market.svg';
 import appStore from '../public/assets/images/app-store.svg';
 import { useTina } from "tinacms/dist/react";
 import client from '@/tina/__generated__/client';
+import { useRouter } from 'next/router';
 
 export async function getStaticProps({ locale }) {
 
@@ -24,6 +25,7 @@ export async function getStaticProps({ locale }) {
 }
 
 export default function Home(props) {
+  const router = useRouter()
 
   const { data } = useTina({
     query: props.query,
@@ -32,7 +34,7 @@ export default function Home(props) {
   });
 
   let pageData = data.home;
-  
+
   return (
     <main className='pb-[130px]' id='home'>
       <section className='pb-[160px] max-[450px]:pt-[40px] max-[450px]:px-6 max-[450px]:bg-[url("../public/assets/images/home-mobile.svg")] pt-[116px] bg-[url("../public/assets/images/hero-bg.svg")] bg-cover bg-no-repeat relative max-[450px]:pb-[120px]'>
@@ -52,9 +54,13 @@ export default function Home(props) {
                 'font-PoppinsMedium text-lg-medium rounded-30 bg-white hover:text-primary-50 hover:bg-transparent hover:border-primary-50 hover:shadow-shadow-button duration-150 max-[450px]:max-w-[191px]'
               }
             >
-              <Link href={'/files/VIXCO_Whitepaper_Eng.pdf'} target='_blank' className='p-[16px_40px] inline-block'>
+              <a
+                href={router.locale === 'kr' ? '/files/VIXCO_Whitepaper_Kor.pdf' : "/files/VIXCO_Whitepaper_Eng.pdf"}
+                target='_blank'
+                className='p-[16px_40px] inline-block'
+              >
                 {pageData.hero.button}
-              </Link>
+              </a>
             </Button>
           </div>
         </div>

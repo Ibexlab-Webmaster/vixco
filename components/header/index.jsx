@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
+import { useRouter } from 'next/router';
 import logo from '../../public/assets/images/logo.svg';
 import LanguageSwitcher from '../languageSwitcher';
 import menu from '../../public/assets/images/menu.svg'
@@ -14,6 +15,8 @@ const options = [
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrollPosition, setScrollPosition] = useState(0);
+  const router = useRouter();
+  var { pathname, asPath, query } = router;
 
   useEffect(() => {
     const handleScroll = () => {
@@ -29,7 +32,7 @@ const Header = () => {
 
   const isHeaderWhite = scrollPosition > 80;
   const handleOptionChange = (option) => {
-    console.log('Selected option:', option);
+    router.push({ pathname, query }, asPath, { locale: option.value })
   };
   return (
     <>

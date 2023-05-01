@@ -4,7 +4,7 @@ import Image from 'next/image';
 import Breadcrumb from '@/components/breadCrumb';
 import Input from '@/components/input';
 import NoticeCardBackground from '../../public/assets/images/NotificationBackground.svg';
-import NotificationBackgroundCardMobile from '../../public/assets/images/NotificationPageBackground-mobile.svg'
+import NotificationBackgroundCardMobile from '../../public/assets/images/NotificationPageBackground-mobile.svg';
 import { useTina } from "tinacms/dist/react";
 import client from '@/tina/__generated__/client';
 
@@ -39,7 +39,7 @@ export default function Notice(props) {
       <section className='pt-[188px] max-[450px]:pt-[88px] pb-[126px] max-[450px]:px-6 max-[450px]:bg-[url("../public/assets/images/NoticepageBackground-mobile.svg")] bg-[url("../public/assets/images/NoticepageBackground.svg")] bg-cover bg-no-repeat'>
         <div className='max-w-xl w-full mx-auto max-[450px]:py-[80px]'>
           <h2 className='text-7xl-bold font-PoppinsBold linear-txt-2 max-[450px]:text-4xl-bold'>
-            {pageData.noticePage.hero.title}
+            {pageData.noticeSection.title}
           </h2>
         </div>
       </section>

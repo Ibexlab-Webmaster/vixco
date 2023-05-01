@@ -770,18 +770,10 @@ export const home = {
             type: 'object',
             fields: [
                 {
-                    label: 'Hero Section',
-                    name: 'hero',
-                    component: 'group',
-                    type: 'object',
-                    fields: [
-                        {
-                            label: 'Title',
-                            name: 'title',
-                            component: 'text',
-                            type: 'string'
-                        }
-                    ]
+                    label: 'Title',
+                    name: 'title',
+                    component: 'text',
+                    type: 'string'
                 },
                 {
                     label: 'Input',

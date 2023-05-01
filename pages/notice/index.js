@@ -12,8 +12,8 @@ import client from '@/tina/__generated__/client';
 
 export async function getStaticProps({ locale }) {
 
-  const { data, query, variables } = await client.queries.notice({
-    relativePath: `${locale}/notice.json`,
+  const { data, query, variables } = await client.queries.home({
+    relativePath: `${locale}/home.json`,
   });
 
   return {
@@ -34,15 +34,14 @@ export default function Notice(props) {
     data: props.data,
   });
 
-  let pageData = data.notice;
-  console.log(pageData)
+  let pageData = data.home;
 
   return (
     <main className='pb-[130px]'>
       <section className='pt-[188px] max-[450px]:pt-[88px] pb-[126px] max-[450px]:px-6 max-[450px]:bg-[url("../public/assets/images/NoticepageBackground-mobile.svg")] bg-[url("../public/assets/images/NoticepageBackground.svg")] bg-cover bg-no-repeat'>
         <div className='max-w-xl w-full mx-auto max-[450px]:py-[80px]'>
           <h2 className='text-7xl-bold font-PoppinsBold linear-txt-2 max-[450px]:text-4xl-bold'>
-            {pageData.hero.title}
+            {pageData.noticePage.hero.title}
           </h2>
         </div>
       </section>
@@ -50,12 +49,12 @@ export default function Notice(props) {
         <div className='max-w-xl w-full mx-auto'>
           <div className='flex items-center justify-between mb-[90px] max-[450px]:flex-col max-[450px]:w-full max-[450px]:items-start max-[450px]:gap-[35px]'>
             <Breadcrumb
-              search={searchValue?.length > 0 ? pageData.input.result : ''}
+              search={searchValue?.length > 0 ? pageData.noticePage.input.result : ''}
             />
             <div className='flex items-center border-b-2 max-w-[296px] border-tonal-900 w-full py-[7px] max-[450px]:max-w-[100%]'>
-              <Image src={pageData.input.icon} width={20} height={20} alt='search' className='mr-[10px]' />
+              <Image src={pageData.noticePage.input.icon} width={20} height={20} alt='search' className='mr-[10px]' />
               <Input
-                placeholder={pageData.input.placeholder}
+                placeholder={pageData.noticePage.input.placeholder}
                 className={
                   'font-PoppinsRegular text-tonal-800 text-base-regular outline-none placeholder:text-tonal-300 max-[450px]:w-full'
                 }
@@ -67,10 +66,10 @@ export default function Notice(props) {
             </div>
           </div>
           <div className='w-full flex items-stretch justify-between max-[450px]:flex-col max-[450px]:gap-5'>
-            {noticeDatas
+            {pageData.noticeSection.items
               ?.filter((n) =>
                 n.title.toLowerCase().includes(searchValue.toLowerCase()) ||
-                n.description.toLowerCase().includes(searchValue.toLowerCase())
+                n.text.toLowerCase().includes(searchValue.toLowerCase())
               )
               .map((n) => {
                 return (
@@ -93,15 +92,17 @@ export default function Notice(props) {
                       <span className='text-sm-medium font-PoppinsMedium text-tonal-300 mb-[15px] inline-block max-[450px]:text-xxs-regular'>
                         /{n.date}/
                       </span>
+                      <p className='text-sm-regular text-tonal-900 font-PoppinsRegular mb-4'>
+                        {n.text}
+                      </p>
                       <p className='text-sm-regular text-tonal-900 font-PoppinsRegular'>
-                        {n.description}
+                        {n.items[0].text}...
                       </p>
                     </div>
                   </Link>
                 );
               })}
           </div>
-
         </div>
       </section>
     </main>

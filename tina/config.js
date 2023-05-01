@@ -1,7 +1,5 @@
 import { defineConfig } from "tinacms";
 import { home } from "./custom_schemas/home/home";
-import { notice } from "./custom_schemas/notice/notice";
-import { headerfooter } from "./custom_schemas/headerfooter/headerfooter";
 
 // Your hosting provider likely exposes this as an environment variable
 const branch = process.env.HEAD || process.env.VERCEL_GIT_COMMIT_REF || "main";
@@ -23,9 +21,7 @@ export default defineConfig({
   },
   schema: {
     collections: [
-      home,
-      notice,
-      headerfooter
+      home
     ],
   },
 });

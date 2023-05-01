@@ -236,14 +236,46 @@
         "title": "Listed on Bithumb",
         "date": "2023.1.5",
         "text": "Dear Vixco community",
-        "subtext": "We are announcing that VIXCO will be listed on the KRW/BTC market today on Bithumb, the No. 1 virtual asset platform ..."
+        "items": [
+          {
+            "text": "We are announcing that VIXCO will be listed on the KRW/BTC market today on Bithumb, the No. 1 virtual asset platform."
+          },
+          {
+            "text": "Deposit start: January 5, 2023 at 4:00 PM. Trade start: January 5, 2023 at 7:00 PM. Starting price: KRW market 35 KRW, BTC market 0.00000162 BTC"
+          },
+          {
+            "text": "For details, please refer to the Bithumb notice below. https://cafe.bithumb.com/view/board-contents/1643433"
+          },
+          {
+            "text": "Thanks to the support of the Vixco community, we achieved great results by being listed on Bithumb."
+          }
+        ]
       },
       {
         "id": 2,
         "title": "VIXCO Migration",
         "date": "2022.2.13",
         "text": "Hello VIXCO community.",
-        "subtext": "VIXCO has carefully moved VIX tokens to enhance transparency and efficiency. Swaps will take place within the fly bit exchange ..."
+        "items": [
+          {
+            "text": "VIXCO has carefully moved VIX tokens to enhance transparency and efficiency. Swaps will take place within the fly bit exchange."
+          },
+          {
+            "text": "Swap progress time. February 16th 17:00~18:00"
+          },
+          {
+            "text": "Deposit and withdrawal stop time. February 16th 12:00~19:00"
+          },
+          {
+            "text": "Migration is a process to includes lock-up and incineration functions."
+          },
+          {
+            "text": "We will notify you when the deposit and withdrawal resume. We are very sorry for the inconvenience in using it. Please continue to show a lot of love and support/encourage VIXCO."
+          },
+          {
+            "text": "Migration contract address: 0xc0b68EB52c89e3fffa62D78012ac8b661bfAA323. Existing contract address: 0x49bf0220c9ce17e52dcca3d217231746d676085b. Migration ratio: It remains the same at 1:1. Deposit address: 0x67323ccae14fd010354a343c146a16968c05d5df"
+          }
+        ]
       }
     ]
   }

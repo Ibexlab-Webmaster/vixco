@@ -1,5 +1,5 @@
 export const home = {
-    label: 'Home Page',
+    label: 'Pages',
     name: 'home',
     path: 'content/home',
     ui: {
@@ -651,7 +651,7 @@ export const home = {
         },
         {
             label: 'Notice Section',
-            name: 'notice',
+            name: 'noticeSection',
             component: 'group',
             type: 'object',
             fields: [
@@ -741,11 +741,78 @@ export const home = {
                             type: 'string',
                         },
                         {
-                            label: 'Subtext',
-                            name: 'subtext',
-                            type: 'string',
+                            label: 'Subtext Items',
+                            name: 'items',
+                            component: "group",
+                            type: 'object',
+                            list: true,
+                            ui: {
+                                itemProps: (item) => {
+                                    return { label: item?.title };
+                                },
+                            },
+                            fields: [
+                                {
+                                    label: 'Subtext',
+                                    name: 'text',
+                                    type: 'string',
+                                }
+                            ],
                         }
                     ],
+                }
+            ],
+        },
+        {
+            label: 'Notice Page',
+            name: 'noticePage',
+            component: 'group',
+            type: 'object',
+            fields: [
+                {
+                    label: 'Hero Section',
+                    name: 'hero',
+                    component: 'group',
+                    type: 'object',
+                    fields: [
+                        {
+                            label: 'Title',
+                            name: 'title',
+                            component: 'text',
+                            type: 'string'
+                        }
+                    ]
+                },
+                {
+                    label: 'Input',
+                    name: 'input',
+                    component: 'group',
+                    type: 'object',
+                    fields: [
+                        {
+                            label: 'Icon',
+                            name: 'icon',
+                            type: 'image',
+                            parse: (media) => {
+                                return `${media}`; // This is how the image is saved in public/uploads
+                            },
+                            uploadDir: () => '/public',
+        
+                            previewSrc: (fullSrc) => fullSrc.replace('/public', ''), //This is what is shown after inserted
+                        },
+                        {
+                            label: 'Input Placeholder',
+                            name: 'placeholder',
+                            component: 'text',
+                            type: 'string'
+                        },
+                        {
+                            label: 'Input Result',
+                            name: 'result',
+                            component: 'text',
+                            type: 'string'
+                        }
+                    ]
                 }
             ],
         }

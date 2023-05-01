@@ -32,7 +32,6 @@ export default function Home(props) {
   });
 
   let pageData = data.home;
-  // console.log(pageData)
   return (
     <main className='pb-[130px]' id='home'>
       <section className='pb-[160px] max-[450px]:pt-[40px] max-[450px]:px-6 max-[450px]:bg-[url("../public/assets/images/home-mobile.svg")] pt-[116px] bg-[url("../public/assets/images/hero-bg.svg")] bg-cover bg-no-repeat relative max-[450px]:pb-[120px]'>
@@ -387,19 +386,19 @@ export default function Home(props) {
         <div className='max-w-xl mx-auto w-full'>
           <div className='flex items-center justify-between mb-[86px]'>
             <div className='w-fit'>
-              <h3 className='text-4xl-bold font-PoppinsBold max-[450px]:text-3xl-bold'>{pageData.notice.title}</h3>
+              <h3 className='text-4xl-bold font-PoppinsBold max-[450px]:text-3xl-bold'>{pageData.noticeSection.title}</h3>
               <hr className='inline-block bg-black p-[2px] w-[30%] max-[450px]:w-[45%]' />
             </div>
             <Link href={'/notice'} className='flex items-center max-[450px]:hidden'>
               <p className='mr-[10px] text-2lg-bold text-primary-50 font-PoppinsBold'>
-                {pageData.notice.link.title}
+                {pageData.noticeSection.link.title}
               </p>
-              <Image src={pageData.notice.link.image} width={32} height={32} alt='notice link' />
+              <Image src={pageData.noticeSection.link.image} width={32} height={32} alt='notice link' />
             </Link>
           </div>
           <div className='flex items-center justify-between max-[450px]:flex-col max-[450px]:gap-5 max-[450px]:mb-[40px]'>
             {
-              pageData.notice.items.length > 0 && pageData.notice.items.map((el) => {
+              pageData.noticeSection.items.length > 0 && pageData.noticeSection.items.map((el) => {
                 return (
                   <Link
                     key={el.id}
@@ -407,8 +406,8 @@ export default function Home(props) {
                     className='py-5 px-6 rounded-[18px] shadow-shadow-2 max-w-[610px] w-full'
                   >
                     <div className='relative mb-[25px] h-full'>
-                      <Image src={pageData.notice.imageItems} width={560} height={194} alt='NoticeCardBackground' className='max-[450px]:hidden' />
-                      <Image src={pageData.notice.imageItemsMobile} width={325} height={202} alt='NoticeCardBackground' className='max-[450px]:block hidden w-full' />
+                      <Image src={pageData.noticeSection.imageItems} width={560} height={194} alt='NoticeCardBackground' className='max-[450px]:hidden' />
+                      <Image src={pageData.noticeSection.imageItemsMobile} width={325} height={202} alt='NoticeCardBackground' className='max-[450px]:block hidden w-full' />
                       <h2 className='text-3lg-semibold font-PoppinsSemibold absolute left-[40px] top-2/4 text-white max-[450px]:text-lg-bold'>
                         {el.title}
                       </h2>
@@ -424,7 +423,7 @@ export default function Home(props) {
                         {el.text}
                       </h5>
                       <p className='text-sm-regular text-tonal-900 font-PoppinsRegular'>
-                        {el.subtext}
+                        {el.items[0].text}..
                       </p>
                     </div>
                   </Link>
@@ -434,86 +433,12 @@ export default function Home(props) {
           </div>
           <Link href={'/notice'} className='max-[450px]:flex max-[450px]:items-center hidden w-fit mx-auto'>
             <p className='mr-[10px] text-2lg-bold text-primary-50 font-PoppinsBold'>
-              {pageData.notice.link.title}
+              {pageData.noticeSection.link.title}
             </p>
-            <Image src={pageData.notice.link.image} width={32} height={32} alt='notice link' />
+            <Image src={pageData.noticeSection.link.image} width={32} height={32} alt='notice link' />
           </Link>
         </div>
       </section>
     </main>
   );
 }
-
-
-// {/* <li className='flex items-center max-[450px]:flex-col max-[450px]:gap-[30px]'>
-//               <div className='flex items-start max-w-[522px] w-full mx-auto max-[450px]:flex-col'>
-//                 <div className='relative flex items-center justify-center max-[450px]:mb-[10px]'>
-//                   <Image src={pageData.solution.numberImage} alt='numbers' width={30} height={30} />
-//                   <p className='text-base-regular absolute font-PoppinsMedium text-white'>
-//                     1
-//                   </p>
-//                 </div>
-//                 <div className='ml-[15px] max-w-[478px] w-full max-[450px]:ml-0'>
-//                   <p className='text-2lg-bold font-PoppinsBold text-tonal-800 max-w-[250px] w-full mb-[31px]'>
-//                     VIXCO Blockchain POS Terminal
-//                   </p>
-//                   <p className='text-tonal-500 text-md-regular font-PoppinsRegular max-[450px]:text-sm-regular'>
-//                     Blockchain POS and kiosk terminals connected to VIXCO
-//                     Working Node are the core infrastructure of the VIXCO
-//                     platform. These terminals come equipped with wallets,
-//                     allowing users to earn or pay with VIXCO Point tokens and
-//                     serving as a connection point between customers and stores.
-//                   </p>
-//                 </div>
-//               </div>
-//               <Image src={vixcoPos} alt='vixco terminal' />
-//             </li>
-//             <li className='flex flex-row-reverse items-center max-[450px]:flex-col max-[450px]:gap-[30px]'>
-//               <div className='flex items-start max-w-[549px] w-full mx-auto max-[450px]:flex-col'>
-//                 <div className='relative flex items-center justify-center max-[450px]:mb-[10px]'>
-//                   <Image src={number} alt='numbers' width={30} height={30} />
-//                   <p className='text-base-regular absolute font-PoppinsMedium text-white'>
-//                     2
-//                   </p>
-//                 </div>
-//                 <div className='ml-[15px] max-w-[505px] w-full max-[450px]:ml-0'>
-//                   <p className='text-2lg-bold font-PoppinsBold text-tonal-800 max-w-[250px] w-full mb-[31px]'>
-//                     Digital Marketing System
-//                   </p>
-//                   <p className='text-tonal-500 text-md-regular font-PoppinsRegular max-[450px]:text-sm-regular'>
-//                     The digital marketing system using blockchain POS and kiosk
-//                     terminals, and cloud-based POS systems is a powerful tool
-//                     for providing efficient and differentiated marketing
-//                     strategies to stores. Hyperlocal digital marketing system
-//                     can be used as an advertising platform for companies that
-//                     want to advertise in the area. Stores can receive fees from
-//                     companies and post advertisements on kiosk terminals.
-//                   </p>
-//                 </div>
-//               </div>
-//               <Image src={dgSystem} alt='vixco terminal' />
-//             </li>
-//             <li className='flex items-center max-[450px]:flex-col max-[450px]:gap-[30px]'>
-//               <div className='flex items-start max-w-[522px] w-full mx-auto max-[450px]:flex-col'>
-//                 <div className='relative flex items-center justify-center max-[450px]:mb-[10px]'>
-//                   <Image src={number} alt='numbers' width={30} height={30} />
-//                   <p className='text-base-regular absolute font-PoppinsMedium text-white'>
-//                     3
-//                   </p>
-//                 </div>
-//                 <div className='ml-[15px] max-w-[478px] w-full max-[450px]:ml-0'>
-//                   <p className='text-2lg-bold font-PoppinsBold text-tonal-800 max-w-[250px] w-full mb-[31px]'>
-//                     VIXPAY Payment System
-//                   </p>
-//                   <p className='text-tonal-500 text-md-regular font-PoppinsRegular max-[450px]:text-sm-regular'>
-//                     VIXPAY is a blockchain-based payment system that provides a
-//                     convenient solution for customers to accumulate and pay with
-//                     VIXCO Point tokens using a mobile app. Combined with
-//                     blockchain POS and kiosk terminals, it creates an
-//                     environment where customers can easily and quickly
-//                     accumulate and use points.
-//                   </p>
-//                 </div>
-//               </div>
-//               <Image src={vixpaySystem} alt='vixco terminal' />
-//             </li> */}

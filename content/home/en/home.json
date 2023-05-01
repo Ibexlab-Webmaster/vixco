@@ -16,7 +16,7 @@
     "goal": {
       "title": "The goal",
       "image": "/assets/images/light-bulb.svg",
-      "text": "The goal of the VIXCO project is to maintain and strengthen connections between stores and local communities while promoting efficient store operations."
+      "text": "The VIXCO project aims to address the various challenges faced by stores due to the rise in contactless ordering and payment. With blockchain-based POS, kiosks, and VIXPAY services, stores can maintain and strengthen their connections with the local community while operating efficiently. This will enable them to establish a sustainable business model that allows them to receive economic support while maintaining solidarity with the local community."
     }
   },
   "globalNetworkAdvantages": {
@@ -47,7 +47,7 @@
     "text2": "Customer information and payment data obtained through the VIXPAY service become valuable digital marketing assets. Using this information, merchants can analyze customer purchase patterns, preferences, and behaviors to establish effective marketing strategies."
   },
   "vixpayApp": {
-    "title": "Vixpay app",
+    "title": "VIXPAY App",
     "image": "/assets/images/vixco-app.png",
     "text": "FOR YOUR BUSINESS",
     "subtext": "VIXPAY is a blockchain platform that connects merchants and consumers. It can be easily used at merchants nationwide without complicated sign-up or charging procedures, while supporting the rewards and payment functions of Vixpay. In particular, focusing on the convenience of consumers and merchants, you can use it simply by presenting a QR code and entering a password."
@@ -235,7 +235,7 @@
         "id": 1,
         "title": "Listed on Bithumb",
         "date": "2023.1.5",
-        "text": "Dear Vixco community",
+        "text": "Dear VIXCO community",
         "items": [
           {
             "text": "We are announcing that VIXCO will be listed on the KRW/BTC market today on Bithumb, the No. 1 virtual asset platform."

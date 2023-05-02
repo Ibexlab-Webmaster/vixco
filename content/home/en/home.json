@@ -48,7 +48,7 @@
   },
   "vixpayApp": {
     "title": "VIXPAY App",
-    "image": "/assets/images/public/Frame 1000002604.jpg",
+    "image": "/assets/images/vixco-app.svg",
     "text": "FOR YOUR BUSINESS",
     "subtext": "VIXPAY is a blockchain platform that connects merchants and consumers. It can be easily used at merchants nationwide without complicated sign-up or charging procedures, while supporting the rewards and payment functions of Vixpay. In particular, focusing on the convenience of consumers and merchants, you can use it simply by presenting a QR code and entering a password."
   },
@@ -73,7 +73,7 @@
         "id": 3,
         "title": "VIXPAY Payment System",
         "text": "VIXPAY is a blockchain-based payment system that provides a convenient solution for customers to accumulate and pay with VIXCO Point tokens using a mobile app. Combined with blockchain POS and kiosk terminals, it creates an environment where customers can easily and quickly accumulate and use points.",
-        "image": "/assets/images/public/vixo-payment-system.png"
+        "image": "/assets/images/public/vicxo-payment-system.svg"
       }
     ]
   },

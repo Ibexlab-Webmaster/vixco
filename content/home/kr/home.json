@@ -48,7 +48,7 @@
   },
   "vixpayApp": {
     "title": "VIXPAY App",
-    "image": "/assets/images/vixco-app.png",
+    "image": "/assets/images/vixco-app.svg",
     "text": "FOR YOUR BUSINESS",
     "subtext": "VIXPAY는 가맹점과 소비자를 연결하는 블록체인 플랫폼입니다. 복잡한 가입이나 충전 절차 없이 전국 가맹점에서 간편하게 사용할 수 있으며, VIXPAY의 리워드 및 결제 기능을 지원합니다. 특히 소비자와 가맹점의 편의성에 초점을 맞춰 QR코드를 제시하고 비밀번호를 입력하는 것만으로 이용할 수 있습니다."
   },
@@ -73,7 +73,7 @@
         "id": 3,
         "title": "VIXPAY 결제 시스템",
         "text": "VIXPAY는 블록체인 기반의 결제 시스템으로, 고객이 모바일 앱을 통해 VIXCO 포인트 토큰을 적립하고 결제할 수 있는 편리한 솔루션을 제공합니다. 블록체인 POS, 키오스크 단말기와 결합해 고객이 쉽고 빠르게 포인트를 적립하고 사용할 수 있는 환경을 조성합니다.",
-        "image": "/assets/images/vixo-payment-system.png"
+        "image": "/assets/images/public/vicxo-payment-system.svg"
       }
     ]
   },

@@ -15,7 +15,7 @@ const publicPath = "public";
 const owner = "Ibexlab-Webmaster";
 const repo = "vixco";
 const headers = { 'X-GitHub-Api-Version': '2022-11-28' };
-const token = "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";
+const token = "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";
 const commiterEmail = "komiljonov@ibexlab.com";
 const now = new Date().toISOString();
 

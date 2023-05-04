@@ -13,10 +13,10 @@ const totalSupply = "totalSupply";
 const circulatingValue = "circulatingValue";
 const publicPath = "public";
 const owner = "Ibexlab-Webmaster";
-const repo = "nextjs-vixco-net";
+const repo = "vixco";
 const headers = { 'X-GitHub-Api-Version': '2022-11-28' };
-const token = "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";
-const commiterEmail = "komiljonovshohjahon@gmail.com";
+const token = "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";
+const commiterEmail = "komiljonov@ibexlab.com";
 const now = new Date().toISOString();
 
 
@@ -58,6 +58,7 @@ export default async (req, res) => {
             });
             return res.status === 200;
         } catch (error) {
+            console.log(error);
             return false;
         }
 

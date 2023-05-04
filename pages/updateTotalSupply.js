@@ -1,33 +1,34 @@
- // Create a page which will use my api with 2 inputs in a form: password and value
+// Create a page which will use my api with 2 inputs in a form: password and value
 
 import { useState } from 'react';
 
- export default function UpdateTotalSupply() {
-        const [password, setPassword] = useState('');
-        const [value, setValue] = useState('');
-        const [isSuccess, setIsSuccess] = useState(false);
-        const [isError, setIsError] = useState(false);
-    
-        const handleSubmit = async (e) => {
-            e.preventDefault();
-            if(password === '' || value === '') return setIsError(true);
-            if(password !== 'ibexlab') return setIsError(true);
-            if(isSuccess) setIsSuccess(false);
-            if(isError) setIsError(false);
-            
-            const res = await fetch(`/api/vixco?q=editTotalSupply&value=${value}`);
-            if (res.status === 200) {
-                // reset form
-                setPassword('');
-                setValue('');
-                setIsSuccess(true);
-            } else {
-                setIsError(true);
-            }
-        };
-    
-        return (
-            <div>
+export default function UpdateTotalSupply() {
+    const [password, setPassword] = useState('');
+    const [value, setValue] = useState('');
+    const [isSuccess, setIsSuccess] = useState(false);
+    const [isError, setIsError] = useState(false);
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        if (password === '' || value === '') return setIsError(true);
+        if (password !== 'ibexlab') return setIsError(true);
+        if (isSuccess) setIsSuccess(false);
+        if (isError) setIsError(false);
+
+        const res = await fetch(`/api/vixco?q=editTotalSupply&value=${value}`);
+        if (res.status === 200) {
+            // reset form
+            setPassword('');
+            setValue('');
+            setIsSuccess(true);
+        } else {
+            setIsError(true);
+        }
+    };
+
+    return (
+        <main className='pb-[130px]' id='home'>
+            <section className='pb-[160px] max-[450px]:pt-[40px] max-[450px]:px-6 max-[450px]:bg-[url("../public/assets/images/home-mobile.svg")] pt-[116px] bg-[url("../public/assets/images/hero-bg.svg")] bg-cover bg-no-repeat relative max-[450px]:pb-[120px]'>
                 <h1>Update Total Supply</h1>
                 <form onSubmit={handleSubmit}>
                     <label htmlFor="password">Password</label>
@@ -50,6 +51,7 @@ import { useState } from 'react';
                 </form>
                 {isSuccess && <p>Success!</p>}
                 {isError && <p>Error!</p>}
-            </div>
-        );
-    }
+            </section>
+        </main>
+    );
+}

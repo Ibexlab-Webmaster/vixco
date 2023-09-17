@@ -409,7 +409,7 @@ export default function Home(props) {
                 return (
                   <Link
                     key={el.id}
-                    href={'/notice'}
+                    href={'/notice/' + el.id}
                     className='py-5 px-6 rounded-[18px] shadow-shadow-2 max-w-[610px] w-full'
                   >
                     <div className='relative mb-[25px] h-full'>

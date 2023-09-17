@@ -403,7 +403,7 @@ export default function Home(props) {
               <Image src={pageData.noticeSection.link.image} width={32} height={32} alt='notice link' />
             </Link>
           </div>
-          <div className='flex items-center justify-between max-[450px]:flex-col max-[450px]:gap-5 max-[450px]:mb-[40px]'>
+          <div className='flex flex-wrap  gap-5 items-center justify-between max-[450px]:flex-col max-[450px]:gap-5 max-[450px]:mb-[40px]'>
             {
               pageData.noticeSection.items.length > 0 && pageData.noticeSection.items.map((el) => {
                 return (

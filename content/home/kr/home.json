@@ -233,26 +233,6 @@
     "items": [
       {
         "id": 1,
-        "title": "빗썸 상장",
-        "date": "2023.1.5",
-        "text": "VIXCO 커뮤니티 여러분께,",
-        "items": [
-          {
-            "text" : "VIXCO가 오늘 1위 가상자산 플랫폼 빗썸(Bithumb)에 KRW/BTC 시장에 상장 되었음을 알려드립니다."
-          },
-          {
-            "text" : "입금시작: 2023년1월5일 오후 4시, 거래시작: 2023년1월5일 오후 7시, 시작가 : 원화마켓 35원, BTC마켓 0.00000162 BTC"
-          },
-          {
-            "text" : "자세한 내용은 아래의 빗썸 공지사항을 참고하십시오. https://cafe.bithumb.com/view/board-contents/1643433"
-          },
-          {
-            "text" : "빅스코 커뮤니티의 성원으로 빗썸에 상장하는 결실을 맺었습니다. 감사합니다."
-          }
-        ]
-      },
-      {
-        "id": 2,
         "title": "VIXCO 마이그레이션",
         "date": "2022.2.13",
         "text": "안녕하세요 VIXCO 커뮤니티입니다.",
@@ -274,6 +254,55 @@
           },
           {
             "text" : "마이그레이션 컨트랙 주소 : 0xc0b68EB52c89e3fffa62D78012ac8b661bfAA323. 기존 컨트랙 주소 : 0x49bf0220c9ce17e52dcca3d217231746d676085b.마이그레이션 비율: 1:1 로 동일하게 유지됩니다. 입금주소 : 0x67323ccae14fd010354a343c146a16968c05d5df"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "title": "빗썸 상장",
+        "date": "2023.1.5",
+        "text": "VIXCO 커뮤니티 여러분께,",
+        "items": [
+          {
+            "text" : "VIXCO가 오늘 1위 가상자산 플랫폼 빗썸(Bithumb)에 KRW/BTC 시장에 상장 되었음을 알려드립니다."
+          },
+          {
+            "text" : "입금시작: 2023년1월5일 오후 4시, 거래시작: 2023년1월5일 오후 7시, 시작가 : 원화마켓 35원, BTC마켓 0.00000162 BTC"
+          },
+          {
+            "text" : "자세한 내용은 아래의 빗썸 공지사항을 참고하십시오. https://cafe.bithumb.com/view/board-contents/1643433"
+          },
+          {
+            "text" : "빅스코 커뮤니티의 성원으로 빗썸에 상장하는 결실을 맺었습니다. 감사합니다."
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "title": "Token Release Schedule",
+        "date": "2023.9.17",
+        "text": "(01 September ~ 30 September 2023)",
+        "items": [
+          {
+            "text": "1.Token Lock-up Release Period",
+            "subtext":"Sept 1, 2023 ~ Sept 29, 2023"
+          },
+          {
+            "text": "2.Lock-up releasing amount during the period",
+            "subtext":"58,525,077 (11.38 % of current circulating supply)"
+          },
+          {
+            "text": "3.General Information",
+            "subtext":"Total Issuance Amount:2,000,000,000\nCirculating Amount (before the release):514,165,303\nCirculating Amount %(before the release): 25.71%\nCirculating Amount (after the release):572,690,380\nCirculating Amount %(after the release): 28.63%"
+          },
+          {
+            "text": "4.Token Lock-up Details",
+            "subtext":"The amount that is being publicly circulated to date is 572,690,380(28.63%)",
+            "image1":"/assets/images/notice_img_1.png"
+          },
+          {
+            "text": "5.Purpose of Token Release and Other Relevant Information",
+            "subtext":"*The exact number of the Circulating Supply may change in real time due to various events and the VIX Pay reward program.\n*For that matter, the VIXCO foundation will calculate the circulation supply that will be updated every month, announce it on the VIXCO homepage(www.vixco.net), Xangle, and at the same time conduct a ‘Self-Reported- Circulating-Supply’ on CoinMarketCap so that this number can also be disclosed to the public."
           }
         ]
       }

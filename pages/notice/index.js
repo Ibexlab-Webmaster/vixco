@@ -64,7 +64,7 @@ export default function Notice(props) {
             </div>
           </div>
           <div className='w-full flex items-stretch justify-between max-[450px]:flex-col max-[450px]:gap-5'>
-            {pageData.noticeSection.items
+            {pageData.noticeSection.items.reverse()
               ?.filter((n) =>
                 n.title.toLowerCase().includes(searchValue.toLowerCase()) ||
                 n.text.toLowerCase().includes(searchValue.toLowerCase())

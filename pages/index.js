@@ -12,7 +12,7 @@ import { useRouter } from 'next/router';
 export async function getStaticProps({ locale }) {
 
   const { data, query, variables } = await client.queries.home({
-    relativePath: `${locale}/home.json`,
+    relativePath: `${locale}/home.json`
   });
 
   return {

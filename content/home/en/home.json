@@ -233,26 +233,6 @@
     "items": [
       {
         "id": 1,
-        "title": "Listed on Bithumb",
-        "date": "2023.1.5",
-        "text": "Dear VIXCO community",
-        "items": [
-          {
-            "text": "We are announcing that VIXCO will be listed on the KRW/BTC market today on Bithumb, the No. 1 virtual asset platform."
-          },
-          {
-            "text": "Deposit start: January 5, 2023 at 4:00 PM. Trade start: January 5, 2023 at 7:00 PM. Starting price: KRW market 35 KRW, BTC market 0.00000162 BTC"
-          },
-          {
-            "text": "For details, please refer to the Bithumb notice below. https://cafe.bithumb.com/view/board-contents/1643433"
-          },
-          {
-            "text": "Thanks to the support of the Vixco community, we achieved great results by being listed on Bithumb."
-          }
-        ]
-      },
-      {
-        "id": 2,
         "title": "VIXCO Migration",
         "date": "2022.2.13",
         "text": "Hello VIXCO community.",
@@ -274,6 +254,55 @@
           },
           {
             "text": "Migration contract address: 0xc0b68EB52c89e3fffa62D78012ac8b661bfAA323. Existing contract address: 0x49bf0220c9ce17e52dcca3d217231746d676085b. Migration ratio: It remains the same at 1:1. Deposit address: 0x67323ccae14fd010354a343c146a16968c05d5df"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "title": "Listed on Bithumb",
+        "date": "2023.1.5",
+        "text": "Dear VIXCO community",
+        "items": [
+          {
+            "text": "We are announcing that VIXCO will be listed on the KRW/BTC market today on Bithumb, the No. 1 virtual asset platform."
+          },
+          {
+            "text": "Deposit start: January 5, 2023 at 4:00 PM. Trade start: January 5, 2023 at 7:00 PM. Starting price: KRW market 35 KRW, BTC market 0.00000162 BTC"
+          },
+          {
+            "text": "For details, please refer to the Bithumb notice below. https://cafe.bithumb.com/view/board-contents/1643433"
+          },
+          {
+            "text": "Thanks to the support of the Vixco community, we achieved great results by being listed on Bithumb."
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "title": "Token Release Schedule",
+        "date": "2023.9.17",
+        "text": "(01 September ~ 30 September 2023)",
+        "items": [
+          {
+            "text": "1.Token Lock-up Release Period",
+            "subtext":"Sept 1, 2023 ~ Sept 29, 2023"
+          },
+          {
+            "text": "2.Lock-up releasing amount during the period",
+            "subtext":"58,525,077 (11.38 % of current circulating supply)"
+          },
+          {
+            "text": "3.General Information",
+            "subtext":"Total Issuance Amount:2,000,000,000\nCirculating Amount (before the release):514,165,303\nCirculating Amount %(before the release): 25.71%\nCirculating Amount (after the release):572,690,380\nCirculating Amount %(after the release): 28.63%"
+          },
+          {
+            "text": "4.Token Lock-up Details",
+            "subtext":"The amount that is being publicly circulated to date is 572,690,380(28.63%)",
+            "image1":"/assets/images/notice_img_1.png"
+          },
+          {
+            "text": "5.Purpose of Token Release and Other Relevant Information",
+            "subtext":"*The exact number of the Circulating Supply may change in real time due to various events and the VIX Pay reward program.\n*For that matter, the VIXCO foundation will calculate the circulation supply that will be updated every month, announce it on the VIXCO homepage(www.vixco.net), Xangle, and at the same time conduct a ‘Self-Reported- Circulating-Supply’ on CoinMarketCap so that this number can also be disclosed to the public."
           }
         ]
       }

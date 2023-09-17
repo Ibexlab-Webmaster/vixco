@@ -753,10 +753,26 @@ export const home = {
                             },
                             fields: [
                                 {
-                                    label: 'Subtext',
+                                    label: 'Text',
                                     name: 'text',
                                     type: 'string',
-                                }
+                                },
+                                {
+                                    label: 'Subtext',
+                                    name: 'subtext',
+                                    type: 'string',
+                                },
+                                {
+                                    label: 'Image1',
+                                    name: 'image1',
+                                    type: 'image',
+                                    parse: (media) => {
+                                        return `${media}`; // This is how the image is saved in public/uploads
+                                    },
+                                    uploadDir: () => '/public',
+                
+                                    previewSrc: (fullSrc) => fullSrc.replace('/public', ''), //This is what is shown after inserted
+                                },
                             ],
                         }
                     ],

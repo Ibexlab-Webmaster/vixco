@@ -279,30 +279,30 @@
       },
       {
         "id": 3,
-        "title": "Token Release Schedule",
+        "title": "토큰 락업 해제일정",
         "date": "2023.9.17",
-        "text": "(01 September ~ 30 September 2023)",
+        "text": "(2023년09월01일 ~ 2023년09월30일)",
         "items": [
           {
-            "text": "1.Token Lock-up Release Period",
-            "subtext":"Sept 1, 2023 ~ Sept 29, 2023"
+            "text": "1. 토큰 락업 해제 기간",
+            "subtext":"2023.09.01 ~ 2023.09.30"
           },
           {
-            "text": "2.Lock-up releasing amount during the period",
-            "subtext":"58,525,077 (11.38 % of current circulating supply)"
+            "text": "2. 기간 내 락업 해제 물량",
+            "subtext":"558,525,077 (현재 유통 중인 토큰 수량의 11.38 %)"
           },
           {
-            "text": "3.General Information",
-            "subtext":"Total Issuance Amount:2,000,000,000\nCirculating Amount (before the release):514,165,303\nCirculating Amount %(before the release): 25.71%\nCirculating Amount (after the release):572,690,380\nCirculating Amount %(after the release): 28.63%"
+            "text": "3. 기본정보",
+            "subtext":"총 발행수량: 2,000,000,000\n현재 유통량(락업 해제 전): 514,165,303\n현재 유통량 %(락업 해제 전): 25.71%\n항후 유통량(락업 해제 후): 572,690,380\n항후 유통량 %(락업 해제 후): 28.63%"
           },
           {
-            "text": "4.Token Lock-up Details",
-            "subtext":"The amount that is being publicly circulated to date is 572,690,380(28.63%)",
+            "text": "4. 토큰 락업 상세 정보",
+            "subtext":"TGE 기준으로 오늘까지 토큰 유통량은 572,690,380(28.63%)",
             "image1":"/assets/images/notice_img_1.png"
           },
           {
-            "text": "5.Purpose of Token Release and Other Relevant Information",
-            "subtext":"*The exact number of the Circulating Supply may change in real time due to various events and the VIX Pay reward program.\n*For that matter, the VIXCO foundation will calculate the circulation supply that will be updated every month, announce it on the VIXCO homepage(www.vixco.net), Xangle, and at the same time conduct a ‘Self-Reported- Circulating-Supply’ on CoinMarketCap so that this number can also be disclosed to the public."
+            "text": "5. 토큰 락업 헤제 목적 및 기타 관련 정보",
+            "subtext":"*정확한 유통물량은 이벤트와 VIX Pay 리워드의 요인으로 인해 실시간으로 변경될 수 있습니다.\n* 이와 관련하여 VIXCO 재단은 매달 업데이트되는 유통량을 계산하여 VIXCO 홈페이지(www.vixco.net) Xangle을 통해 발포함과 동시에 CoinMarketCap에서 ‘자체-보고-유통-공급’을 실시하여 유통량 수치도 알 수 있도록 공개합니다."
           }
         ]
       }

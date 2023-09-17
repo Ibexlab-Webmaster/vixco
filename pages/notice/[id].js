@@ -65,8 +65,8 @@ export default function NoticePerPage(props) {
                     <p className="text-lg-medium font-PoppinsMedium text-tonal-400 mb-[30px] max-[450px]:mb-[35px] max-[450px]:text-base-regular max-[450px]:font-PoppinsRegular">/{n.date}/</p>
                     <div className='flex flex-col gap-y-4 w-full'>
                       {n.items?.map((el, index) => {
-                        const sentences = el?.text?.split('. ');
-                        const subtext = el?.subtext;
+                        const sentences = el?.text?.split('\n');
+                        const subtext = el?.subtext?.split('\n');
                         const image1 = el?.image1;
                         return (
                           <div key={index} className="text-tonal-800 text-md-regular font-PoppinsRegular w-fit max-[450px]:text-sm-regular">
@@ -75,9 +75,17 @@ export default function NoticePerPage(props) {
                                 {<p
                                 className='text-black text-2xl-bold font-PoppinsRegular w-fit max-[450px]:text-sm-regular'
                                 >{sentence}</p>}
-                                {subtext != null ? <p
-                                  className='text-tonal-600 text-md-bold font-PoppinsRegular w-fit max-[450px]:text-sm-regular'
-                                >{subtext}</p> : <div></div>}
+                                {/* if sentence is equal to "\n" add <\br> */}
+                                {
+                                  sentence == "\n" ? <div></div> : <div></div>
+                                }
+                                 {subtext!= null ? subtext.map((sub, i) =>  (
+                                  <React.Fragment key={i}>
+                                    {<p
+                                    className='text-tonal-600 text-md-bold font-PoppinsRegular w-fit max-[450px]:text-sm-regular'
+                                    >{sub}</p>}
+                                  </React.Fragment>
+                                  )) : <div></div>}
                                  {image1 != null ? <img src={image1} alt="" className='w-full max-[450px]:w-[100%] max-[450px]:h-[auto] max-[450px]:object-cover max-[450px]:rounded-[10px] max-[450px]:mt-[20px]' /> : <div></div>}
                                 {/* {i < sentences.length - 1 ? '.' : ''} */}
                                 <br />

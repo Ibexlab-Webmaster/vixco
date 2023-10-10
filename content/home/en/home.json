@@ -280,20 +280,20 @@
       {
         "id": 3,
         "title": "Token Release Schedule",
-        "date": "2023.9.17",
-        "text": "(01 September ~ 30 September 2023)",
+        "date": "2023.10.10",
+        "text": "(01 October ~ 31 October 2023)",
         "items": [
           {
             "text": "1.Token Lock-up Release Period",
-            "subtext":"Sept 1, 2023 ~ Sept 29, 2023"
+            "subtext":"Oct 1, 2023 ~ Oct 31, 2023"
           },
           {
             "text": "2.Lock-up releasing amount during the period",
-            "subtext":"58,525,077 (11.38 % of current circulating supply)"
+            "subtext":"0"
           },
           {
             "text": "3.General Information",
-            "subtext":"Total Issuance Amount:2,000,000,000\nCirculating Amount (before the release):514,165,303\nCirculating Amount %(before the release): 25.71%\nCirculating Amount (after the release):572,690,380\nCirculating Amount %(after the release): 28.63%"
+            "subtext":"Total Issuance Amount:2,000,000,000\nCirculating Amount (before the release):572,690,380\nCirculating Amount %(before the release): 28.63%\nCirculating Amount (after the release):572,690,380\nCirculating Amount %(after the release): 28.63%"
           },
           {
             "text": "4.Token Lock-up Details",
@@ -302,7 +302,7 @@
           },
           {
             "text": "5. Purpose of Token Release and Other Relevant Information",
-            "subtext":"*The exact number of the Circulating Supply may change in real time due to various events and the VIX Pay reward program.\n*For that matter, the VIXCO foundation will calculate the circulation supply that will be updated every month, announce it on the VIXCO homepage(www.vixco.net), Xangle, and at the same time conduct a ‘Self-Reported- Circulating-Supply’ on CoinMarketCap so that this number can also be disclosed to the public."
+            "subtext":"*The exact number of the Circulating Supply may change in real time due to various events and the VIX Pay reward program.\n**For that matter, the VIXCO foundation will calculate the circulation supply that will be updated every month, announce it on the VIXCO homepage(www.vixco.net), Xangle, and at the same time conduct a ‘Self-Reported-Circulating-Supply’ on CoinMarketCap so that this number can also be disclosed to the public."
           }
         ]
       }

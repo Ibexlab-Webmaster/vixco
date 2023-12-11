@@ -363,6 +363,35 @@
             "subtext":"*The exact number of the Circulating Supply may change in real time due to various events and the VIX Pay reward program.\n*For that matter, the VIXCO foundation will calculate the circulation supply that will be updated every month, announce it on the VIXCO homepage(www.vixco.net), Xangle, and at the same time conduct a 'Self-Reported-Circulating-Supply' on CoinMarketCap so that this number can also be disclosed to the public."
           }
         ]
+      },
+      {
+        "id": 6,
+        "title": "Token Release Schedule",
+        "date": "2023.12.11",
+        "text": "(01 December ~ 30 December 2023)",
+        "items": [
+          {
+            "text": "1.Token Lock-up Release Period",
+            "subtext":"Dec 1, 2023 ~ Dec 30, 2023"
+          },
+          {
+            "text": "2.Lock-up releasing amount during the period",
+            "subtext":"47,000,000 (8.21 % of current circulating supply)"
+          },
+          {
+            "text": "3.General Information",
+            "subtext":"Total Issuance Amount:2,000,000,000\nCirculating Amount (before the release):572,690,380\nCirculating Amount %(before the release): 28.63%\nCirculating Amount (after the release):619,690,380\nCirculating Amount %(after the release): 30.98%"
+          },
+          {
+            "text": "4.Token Lock-up Details",
+            "subtext":"The amount that is being publicly circulated to date is 619,690,380(30.90%)",
+            "image1":"/assets/images/notice_img_2023_12.png"
+          },
+          {
+            "text": "5. Purpose of Token Release and Other Relevant Information",
+            "subtext":"*The exact number of the Circulating Supply may change in real time due to various events and the VIX Pay reward program.\n*For that matter, the VIXCO foundation will calculate the circulation supply that will be updated every month, announce it on the VIXCO homepage(www.vixco.net), Xangle, and at the same time conduct a 'Self-Reported-Circulating-Supply' on CoinMarketCap so that this number can also be disclosed to the public."
+          }
+        ]
       }
     ]
   },

@@ -405,7 +405,7 @@ export default function Home(props) {
           </div>
           <div className='flex flex-wrap  gap-5 items-center justify-between max-[450px]:flex-col max-[450px]:gap-5 max-[450px]:mb-[40px]'>
             {
-              pageData.noticeSection.items.length > 0 && pageData.noticeSection.items.reverse().map((el) => {
+              pageData.noticeSection.items.length > 0 && pageData.noticeSection.items.reverse().slice(0, 2).map((el) => {
                 return (
                   <Link
                     key={el.id}

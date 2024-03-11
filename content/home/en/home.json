@@ -392,6 +392,67 @@
             "subtext":"*The exact number of the Circulating Supply may change in real time due to various events and the VIX Pay reward program.\n*For that matter, the VIXCO foundation will calculate the circulation supply that will be updated every month, announce it on the VIXCO homepage(www.vixco.net), Xangle, and at the same time conduct a 'Self-Reported-Circulating-Supply' on CoinMarketCap so that this number can also be disclosed to the public."
           }
         ]
+      },
+      {
+        "id": 7,
+        "title": "Token Release Schedule",
+        "date": "2024.03.11",
+        "text": "(01 Jan ~ 31 March 2024)",
+        "items": [
+          {
+            "text": "1.Token Lock-up Release Period",
+            "subtext":"Jan 1, 2024 ~ 31 March 2024"
+          },
+          {
+            "text": "2.Lock-up releasing amount during the period",
+            "subtext":"57,000,000 (8.42 % of current circulating supply)"
+          },
+          {
+            "text": "3.General Information",
+            "subtext":"Total Issuance Amount:2,000,000,000\nCirculating Amount (before the release):619,690,380\nCirculating Amount %(before the release): 30.98%\nCirculating Amount (after the release):676,690,380\nCirculating Amount %(after the release): 33.83%"
+          },
+          {
+            "text": "4.Token Lock-up Details",
+            "subtext":"The amount that is being publicly circulated to date is 676,690,380(33.83%)",
+            "image1":"/assets/images/notice_img_2024_01.png"
+          },
+          {
+            "text": "5. Purpose of Token Release and Other Relevant Information",
+            "subtext":"*The exact number of the Circulating Supply may change in real time due to various events and the VIX Pay reward program.\n*For that matter, the VIXCO foundation will calculate the circulation supply that will be updated every month, announce it on the VIXCO homepage(www.vixco.net), Xangle, and at the same time conduct a 'Self-Reported-Circulating-Supply' on CoinMarketCap so that this number can also be disclosed to the public."
+          }
+        ]
+      },
+      {
+        "id": 8,
+        "title": "2024 Roadmap",
+        "date": "2023.12.11",
+        "text": "2024 Roadmap",
+        "items": [
+          {
+            "text": "Roadmap timeframe",
+            "subtext":"Yearly"
+          },
+          {
+            "text": "Announcement Date",
+            "subtext":"March 10, 2024"
+          },
+          {
+            "text": "Q1 2024 [January - March]:",
+            "subtext":" - Connect to Layer2 Optimism network to reduce ETH gas costs for VIXCO token transactions\n - Development of VIXCO token-based marketplace vixco.store\n - Gathering of stores to join the marketplace vixco.store\n - Open vixco.store beta service"
+          },
+          {
+            "text": "Q2 2024 [April - June]:",
+            "subtext":"- Completion of 21-inch blockchain Kiosk product development and mass production\n - Completed development and launched Kiosk solution and table ordering solution\n - Registered VIXCO POS, Kiosk, and table order products with the Korea Restaurant Association and jointly marketed them\n - Developed Account Abstraction's Paymaster technology to pay for gas with VIXCO tokens during VIXCO transactions\n - Marketplace vixco.store commercial service\n - Aim to have 100 stores on vixco.store"
+          },
+          {
+            "text": "Q3 2024 [July - September]:",
+            "subtext":" - Launch of vixco.store Kazakhstan and global services\n - Target of 500 stores on vixco.store\n - Expand into direct to customer (D2C) business to revitalize vixco.store\n - Launched Paymaster service to pay for gas with VIXCO tokens for VIXCO transactions\n - Develop VIXCO local advertising platform"
+          },
+          {
+            "text": "Q4 2024 [October - December]:",
+            "subtext":" - Aim to have 1,000 stores on vixco.store\n - Launch of VIXCO Local Ads service\n - Expand vixco.store outside Kazakhstan (Sri Lanka, India, Japan, Thailand, etc.)"
+          }
+        ]
       }
     ]
   },

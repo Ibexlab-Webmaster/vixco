@@ -108,14 +108,14 @@ const Header = () => {
                   Notice
                 </Link>
               </li>
-              <li>
+              {/* <li>
                 <Link
                   href={'https://vixco-scan.finenex.net'} target='_blank'
                   className='p-2 font-PoppinsMedium text-base-medium text-primary-50'
                 >
                   Block scan
                 </Link>
-              </li>
+              </li> */}
             </ul>
           </nav>
 

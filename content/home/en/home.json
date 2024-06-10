@@ -465,6 +465,35 @@
             "subtext":"Hello, VIXCO Community,\n\nThe VIXCO team is thrilled to share some important news with you. We have taken significant steps to enhance the utility and activate trading for VIXCO tokens. We have successfully completed the development of a bridge connecting ETH and Optimism to bolster VIXCO trading services on the Optimism Layer2 platform. This development is expected to greatly improve the liquidity and accessibility of VIXCO tokens.\n\n   • VIXCO Main Bridge: https://optimism-bridge.vixco.net/\n   • VIXCO Test Bridge: https://optimism-testnet-bridge.vixco.net/\n\nFurthermore, the VIXCO Store is set to launch with around 500 D2C companies, with plans to expand to up to 3,000 companies in the future. For this, we will be providing 10,000,000 VIX from the Payment Reserve to these companies for liquidity supply purposes, and moving 5,000,000 VIX from the ECO Reward to smoothly support VIXCO token trading and offer an enhanced trading experience to our users.\n\nThis achievement was made possible through our collaboration with ibexlab Co., Ltd., to whom we have decided to pay 10,000,000 VIX.\n\nThe VIXCO team will continue to work hard to expand the usage range of VIXCO tokens, promote the use of VIXCO in more stores, support the activation of transactions, and provide our users with a diverse and rich trading experience.\n\nWe deeply appreciate your continued interest and support.\n\nSincerely, The VIXCO Team"
           }
         ]
+      },
+      {
+        "id": 10,
+        "title": "Token Release Schedule",
+        "date": "2024.06.10",
+        "text": "(01 April ~ 30 June 2024)",
+        "items": [
+          {
+            "text": "1.Token Lock-up Release Period",
+            "subtext":"April 1, 2024 ~ June 30, 2024"
+          },
+          {
+            "text": "2.Lock-up releasing amount during the period",
+            "subtext":"107,000,000 (13.7% of current circulating supply)"
+          },
+          {
+            "text": "3.General Information",
+            "subtext":"Total Issuance Amount:2,000,000,000\nCirculating Amount (before the release): 676,690,380\nCirculating Amount %(before the release): 33.83%\nCirculating Amount (after the release):783,690,380\nCirculating Amount %(after the release): 39.18%"
+          },
+          {
+            "text": "4.Token Lock-up Details",
+            "subtext":"The amount that is being publicly circulated to date is 783,690,380(39.18%)",
+            "image1":"/assets/images/notice_img_2024_06.png"
+          },
+          {
+            "text": "5. Purpose of Token Release and Other Relevant Information",
+            "subtext":"*The exact number of the Circulating Supply may change in real time due to various events and the VIX Pay reward program.\n*For that matter, the VIXCO foundation will calculate the circulation supply that will be updated every month, announce it on the VIXCO homepage(www.vixco.net), Xangle, and at the same time conduct a ‘Self-Reported-Circulating-Supply’ on CoinMarketCap so that this number can also be disclosed to the public."
+          }
+        ]
       }
     ]
   },

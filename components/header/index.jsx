@@ -7,6 +7,7 @@ import LanguageSwitcher from '../languageSwitcher';
 import menu from '../../public/assets/images/menu.svg'
 import MenuModal from '../menu';
 import Button from '@/components/UI/button';
+import arrowUpRidht from '../public/assets/images/arrow-up-right.svg';
 
 const options = [
   { value: 'en', label: 'ENG' },
@@ -120,16 +121,15 @@ const Header = () => {
                             <li>
                 <Button
               className={
-                'font-PoppinsMedium text-lg-medium rounded-30 bg-primary-50'
+                'font-PoppinsMedium text-lg-medium rounded-30 bg-primary-50 max-[450px]:max-w-[191px]'
               }
             >
               <a
                   href={'https://optimism-bridge.vixco.net'} target='_blank'
-                  className='p-2 font-PoppinsMedium text-base-medium text-white'
-              >
+                  className='p-2 font-PoppinsMedium text-base-medium text-white'>
                 Bridge
+              <Image src={arrowUpRidht} className='mr-[10px]' />
               </a>
-              <Image src="../public/assets/images/arrow-up-right.svg" className='mr-[10px]' />
             </Button>
               </li>
             </ul>

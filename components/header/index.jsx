@@ -6,6 +6,7 @@ import logo from '../../public/assets/images/logo.svg';
 import LanguageSwitcher from '../languageSwitcher';
 import menu from '../../public/assets/images/menu.svg'
 import MenuModal from '../menu';
+import Button from '@/components/UI/button';
 
 const options = [
   { value: 'en', label: 'ENG' },

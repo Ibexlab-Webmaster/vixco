@@ -128,7 +128,7 @@ const Header = () => {
                   href={'https://optimism-bridge.vixco.net'} target='_blank'
                   className='p-2 font-PoppinsMedium text-base-medium text-white'>
                 Bridge
-              <Image src={arrowUpRidht} className='mr-[10px]' />
+              <Image src={arrowUpRidht} className='inline-block' />
               </a>
             </Button>
               </li>

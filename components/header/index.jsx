@@ -118,7 +118,7 @@ const Header = () => {
                   Block scan
                 </Link>
               </li> */}
-                            <li>
+                            {/* <li>
                 <Button
               className={
                 'font-PoppinsMedium text-lg-medium rounded-30 bg-primary-50 max-[450px]:max-w-[191px]'
@@ -131,7 +131,7 @@ const Header = () => {
               <Image src={arrowUpRidht} className='inline-block' />
               </a>
             </Button>
-              </li>
+              </li> */}
             </ul>
           </nav>
 

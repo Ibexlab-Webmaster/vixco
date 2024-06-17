@@ -116,6 +116,21 @@ const Header = () => {
                   Block scan
                 </Link>
               </li> */}
+                            <li>
+                <Button
+              className={
+                'font-PoppinsMedium text-lg-medium rounded-30 bg-primary-50'
+              }
+            >
+              <a
+                  href={'https://optimism-bridge.vixco.net'} target='_blank'
+                  className='p-2 font-PoppinsMedium text-base-medium text-white'
+              >
+                Bridge
+              </a>
+              <Image src="../public/assets/images/arrow-up-right.svg" className='mr-[10px]' />
+            </Button>
+              </li>
             </ul>
           </nav>
 

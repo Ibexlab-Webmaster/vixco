@@ -7,7 +7,7 @@ import LanguageSwitcher from '../languageSwitcher';
 import menu from '../../public/assets/images/menu.svg'
 import MenuModal from '../menu';
 import Button from '@/components/UI/button';
-import arrowUpRidht from '../public/assets/images/arrow-up-right.svg';
+import arrowUpRidht from '../../public/assets/images/arrow-up-right.svg';
 
 const options = [
   { value: 'en', label: 'ENG' },

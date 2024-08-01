@@ -7,7 +7,7 @@ import LanguageSwitcher from '../languageSwitcher';
 import menu from '../../public/assets/images/menu.svg'
 import MenuModal from '../menu';
 import Button from '@/components/UI/button';
-import arrowUpRidht from '../../public/assets/images/arrow-up-right.svg';
+import arrowUpRight from '../../public/assets/images/arrow-up-right.svg';
 
 const options = [
   { value: 'en', label: 'ENG' },
@@ -46,7 +46,7 @@ const Header = () => {
           <Link href='/#home' scroll={false}>
             <Image src={logo} alt='Picture of the author' />
           </Link>
-          <nav className='max-w-[760px] w-full max-[450px]:hidden'>
+          <nav className='max-w-[820px] w-full max-[450px]:hidden'>
             <ul className='flex items-center justify-between'>
               <li>
                 <Link
@@ -118,23 +118,28 @@ const Header = () => {
                   Block scan
                 </Link>
               </li> */}
-                            {/* <li>
-                <Button
-              className={
-                'font-PoppinsMedium text-lg-medium rounded-30 bg-primary-50 max-[450px]:max-w-[191px]'
-              }
-            >
-              <a
-                  href={'https://optimism-bridge.vixco.net'} target='_blank'
-                  className='p-2 font-PoppinsMedium text-base-medium text-white'>
-                Bridge
-              <Image src={arrowUpRidht} className='inline-block' />
-              </a>
-            </Button>
-              </li> */}
+              <li>
+                <Link
+                  href={'https://docs.vixco.net'}
+                  className='p-2 font-PoppinsMedium text-base-medium text-primary-50'
+                  target='_blank'
+                >
+                  Docs
+                  <Image src={arrowUpRight} className='inline-block' width={12} height={12} style={{marginBottom: '5px'}} />
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href={'https://optimism-bridge.vixco.net'}
+                  className='p-2 font-PoppinsMedium text-base-medium text-primary-50'
+                  target='_blank'
+                >
+                  Bridge
+                  <Image src={arrowUpRight} className='inline-block' width={12} height={12} style={{marginBottom: '5px'}} />
+                </Link>
+              </li>
             </ul>
           </nav>
-
           <div className='relative max-[450px]:hidden'>
             <LanguageSwitcher options={options} onChange={handleOptionChange} />
           </div>

@@ -120,21 +120,21 @@ const Header = () => {
               </li> */}
               <li>
                 <Link
-                  href={'https://docs.vixco.net'}
-                  className='p-2 font-PoppinsMedium text-base-medium text-primary-50'
-                  target='_blank'
-                >
-                  Docs
-                  <Image src={arrowUpRight} className='inline-block' width={12} height={12} style={{marginBottom: '5px'}} />
-                </Link>
-              </li>
-              <li>
-                <Link
                   href={'https://optimism-bridge.vixco.net'}
                   className='p-2 font-PoppinsMedium text-base-medium text-primary-50'
                   target='_blank'
                 >
                   Bridge
+                  <Image src={arrowUpRight} className='inline-block' width={12} height={12} style={{marginBottom: '5px'}} />
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href={'https://docs.vixco.net'}
+                  className='p-2 font-PoppinsMedium text-base-medium text-primary-50'
+                  target='_blank'
+                >
+                  Docs
                   <Image src={arrowUpRight} className='inline-block' width={12} height={12} style={{marginBottom: '5px'}} />
                 </Link>
               </li>

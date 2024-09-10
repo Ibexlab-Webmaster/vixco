@@ -494,6 +494,35 @@
             "subtext":"*The exact number of the Circulating Supply may change in real time due to various events and the VIX Pay reward program.\n*For that matter, the VIXCO foundation will calculate the circulation supply that will be updated every month, announce it on the VIXCO homepage(www.vixco.net), Xangle, and at the same time conduct a ‘Self-Reported-Circulating-Supply’ on CoinMarketCap so that this number can also be disclosed to the public."
           }
         ]
+      },
+      {
+        "id": 11,
+        "title": "Token Release Schedule",
+        "date": "2024.09.10",
+        "text": "(10 September ~ 30 JuSeptember ne 2024)",
+        "items": [
+          {
+            "text": "1.Token Lock-up Release Period",
+            "subtext":"10 September, 2024 ~ 30 September, 2024"
+          },
+          {
+            "text": "2.Lock-up releasing amount during the period",
+            "subtext":"17,000,000 (2.1% of current circulating supply)"
+          },
+          {
+            "text": "3.General Information",
+            "subtext":"Total Issuance Amount:2,000,000,000\nCirculating Amount (before the release): 803,690,380\nCirculating Amount %(before the release): 40.18%\nCirculating Amount (after the release):820,690,380\nCirculating Amount %(after the release): 41.03%"
+          },
+          {
+            "text": "4.Token Lock-up Details",
+            "subtext":"The amount that is being publicly circulated to date is 820,690,380(41.03%)",
+            "image1":"/assets/images/notice_img_2024_09.png"
+          },
+          {
+            "text": "5. Purpose of Token Release and Other Relevant Information",
+            "subtext":"*The exact number of the Circulating Supply may change in real time due to various events and the VIX Pay reward program.\n*For that matter, the VIXCO foundation will calculate the circulation supply that will be updated every month, announce it on the VIXCO homepage(www.vixco.net), Xangle, and at the same time conduct a ‘Self-Reported-Circulating-Supply’ on CoinMarketCap so that this number can also be disclosed to the public."
+          }
+        ]
       }
     ]
   },
